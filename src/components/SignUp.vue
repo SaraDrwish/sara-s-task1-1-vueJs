@@ -42,6 +42,8 @@ form {
   margin: 1rem;
   background-color: #ededed;
   border-radius: 1rem;
+  border: 1px solid #3b2e8c;
+  text-transform: capitalize;
 }
 label {
   color: #3b2e8c;
@@ -54,7 +56,7 @@ input {
   display: flex;
   color: #3b2e8c;
   width: 90%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   margin: 0.5rem auto;
   border-radius: 0.5rem;
 }
@@ -68,7 +70,7 @@ input[type="button"] {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin: 6% auto;
+  margin: 4% auto;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.4s ease;
