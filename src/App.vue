@@ -43,8 +43,12 @@ a {
 .appClassGeneral {
   height: 4473px;
   opacity: 0.94;
-  background: url(./assets/images/NoiseTexture.png),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(./assets/images/NoiseTexture.png),
     lightgray 0% 0% / 60.90909242630005px 60.90909242630005px repeat;
-  /* mix-blend-mode: overlay; */
+  mix-blend-mode: overlay;
 }
 </style>

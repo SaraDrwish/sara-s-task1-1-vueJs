@@ -1,7 +1,7 @@
 <template>
   <div class="NavB">
     <div class="logo">
-      <img src="../assets/images/NavBar Logo.png" alt="logo" />
+      <a href="/"><img src="../assets/images/NavBar Logo.png" alt="logo" /></a>
     </div>
     <div class="nav-list">
       <ul>
@@ -84,7 +84,7 @@
 .NavB {
   width: 100%;
   font-family: "Cairo", sans-serif;
-  margin: 0 auto 11px auto;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
