@@ -822,4 +822,14 @@ p {
   width: 24px;
   height: 24px;
 }
+
+/* ///////////////////////////////Start media //////////////////////// */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+/* /////////////////////end media///////////////////////////  */
 </style>
