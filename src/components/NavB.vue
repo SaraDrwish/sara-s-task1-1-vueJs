@@ -5,14 +5,15 @@
     </div>
     <div class="nav-list">
       <ul>
-        <a href="home"><li>Home</li></a>
-        <a href="features"><li>Features</li></a>
-        <a href="packages"><li>Packages</li></a>
+        <router-link to="/"><li>Home</li></router-link>
+        <router-link to="/features"><li>Features</li></router-link>
+        <router-link to="/packages"><li>Packages</li></router-link>
       </ul>
+      <router-view />
     </div>
 
     <div class="nav-btns">
-      <button><a href="signup">Sign In</a></button>
+      <button><a href="signIn">Sign In</a></button>
       <button><a href="freetrial">Free Trial</a></button>
 
       <!-- svg start  -->

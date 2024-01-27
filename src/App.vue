@@ -1,7 +1,7 @@
 <template>
   <NavB />
   <HeroHeader />
-  <!-- <SignUp /> -->
+  <SignUp />
 </template>
 
 <script>

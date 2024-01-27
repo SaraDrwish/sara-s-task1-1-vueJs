@@ -1,15 +1,13 @@
 <template>
-  <div class="templateSigup">
-    <h1>Sign Up</h1>
-    <div class="SignUp">
+  <div class="templateSignin">
+    <h1>Sign In</h1>
+    <div class="SignIn">
       <form>
-        <label for="name"> Name : </label>
+        <label for="name"> User Name : </label>
         <input type="text" placeholder="name" />
-        <label for="email"> Email : </label>
-        <input type="email" placeholder="email" />
-        <label for="password"> password : </label>
+        <label for="password"> Password : </label>
         <input type="password" placeholder="password" />
-        <input type="button" value="Sigin Up" />
+        <input type="button" value="Sign In" />
       </form>
     </div>
   </div>
@@ -18,11 +16,15 @@
 
 <script>
 export default {
-  name: "SignUp",
+  name: "SignIn",
 };
 </script>
 
 <style scoped>
+.templateSignin {
+  display: flex;
+  flex-direction: row;
+}
 .SignUp {
   display: flex;
   flex-direction: column;
