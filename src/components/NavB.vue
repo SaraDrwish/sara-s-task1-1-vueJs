@@ -79,15 +79,18 @@
 <script setup></script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+
 .NavB {
   width: 100%;
-  margin: auto;
+  font-family: "Cairo", sans-serif;
+  margin: 0 auto 11px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 19px 105px;
   /* padding: 16px 105px; */
-  /* background-color: rgb(147, 147, 147); */
+  background-color: #f3f3f3;
   font-size: 16px;
 }
 ul {
@@ -111,8 +114,10 @@ li:hover {
 .nav-btns {
   display: flex;
   gap: 23px;
+  font-family: "Cairo", sans-serif;
 }
 .nav-btns button {
+  font-family: "Cairo";
   background-color: white;
   padding: 12px 22px;
   font-size: 16px;
