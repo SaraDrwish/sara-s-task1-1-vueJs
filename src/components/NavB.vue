@@ -145,4 +145,39 @@ li:hover {
   justify-content: center;
   padding-left: 18px;
 }
+
+/* /////////////////start media //////////////////////// */
+@media (min-width: 320px) {
+  .NavB {
+    /* width: 100%; */
+    font-size: 0.8rem;
+    overflow: hidden;
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .nav-btns {
+    gap: 0.2rem;
+  }
+
+  .NavB .logo a,
+  .NavB img {
+    width: 6rem;
+    font-size: 12px;
+  }
+  ul {
+    gap: 0.5rem;
+  }
+  .nav-btns button {
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+  }
+  .lang-icon {
+    width: 1.4rem;
+    gap: 0.2rem;
+    padding-left: 0.4rem;
+  }
+}
+
+/* ////////////////end media ///////////////////// */
 </style>

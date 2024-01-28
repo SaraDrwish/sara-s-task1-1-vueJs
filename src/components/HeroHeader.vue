@@ -944,8 +944,20 @@ p {
 /* ///////////////////////////////Start media //////////////////////// */
 
 @media (min-width: 320px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .circl-shdow-bg {
+    overflow: hidden;
+    left: -14%;
+    top: -8%;
+    width: 500px;
+    height: 400px;
+  }
   .HeroHeader-layout-gray {
     height: 450px;
+    width: 100%;
   }
   p,
   h6 {
@@ -959,6 +971,8 @@ p {
   }
   p {
     margin: 1rem auto;
+    width: 77%;
+    font-size: 0.8rem;
   }
   h2,
   h3 {
