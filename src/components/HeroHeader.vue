@@ -518,6 +518,29 @@
     </div>
     <!-- black right text left dail end -->
 
+    <div class="right-btm-box-added">
+      <div class="added-box-imeges">
+        <img
+          src="../assets/images/added-box-circl-1.svg"
+          alt="added-box-circl-1.svg"
+        />
+        <img src="../assets/images/added-box1.svg" alt="added-box1.svg" />
+      </div>
+      <div class="added-box-text">
+        <div class="added-box-text-titles">
+          <h4>New company was added</h4>
+          <h6>7 hours ago</h6>
+        </div>
+        <p>
+          <span>Mohanad</span>
+          added a new company
+          <span>“Osolutions”</span>
+          assigned to
+          <span>Omar Tarek</span>
+        </p>
+      </div>
+    </div>
+
     <!-- //////////////////end -->
   </div>
 </template>
@@ -823,11 +846,108 @@ p {
   height: 24px;
 }
 
+.right-btm-box-added {
+  position: absolute;
+  width: 454px;
+  height: 85px;
+  top: 488px;
+  left: 886px;
+  border-radius: 6px;
+  border: 1px solid white;
+  display: flex;
+  /* gap: 4px; */
+  gap: 23px;
+  padding-left: 18px;
+  padding-right: 23px;
+}
+.added-box-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 23px; */
+  background: rgb(66, 28, 28);
+  padding: 1%;
+  width: 90%;
+}
+
+.added-box-imeges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 23px; */
+  width: 20%;
+  background: yellow;
+  padding: 1%;
+}
+
+.added-box-imeges img {
+  background: greenyellow;
+  width: 100%;
+  height: 100%;
+}
+
+.added-box-imeges img:nth-child(1) {
+  width: 5px;
+  height: 5px;
+}
+.added-box-imeges img:nth-child(2) {
+  width: 33px;
+  height: 20px;
+}
+
+.added-box-text {
+  background: pink;
+  padding: 19px 0 17px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.added-box-text-titles {
+  background: lemonchiffon;
+  padding: 1%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  margin: auto;
+  color: #393838;
+  text-align: left;
+}
+.added-box-text-titles h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.added-box-text-titles h6 {
+  font-size: 8px;
+  /* align-self: flex-end; */
+  font-weight: 700;
+  padding-top: 4px;
+}
+
+.added-box-text p {
+  font-size: 12px;
+  padding: 1%;
+  background: turquoise;
+  width: 100%;
+  color: #7d7c7c;
+  text-align: left;
+}
+.added-box-text span {
+  color: #565656;
+  font-weight: 400;
+}
+
 /* ///////////////////////////////Start media //////////////////////// */
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 11px;
+  body,
+  * {
+    font-size: 8px;
+    padding: 1px;
+    margin: 1px;
   }
 }
 
