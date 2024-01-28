@@ -1038,21 +1038,28 @@ p {
   .added-box-text .added-box-texts-p-span-div span,
   .added-box-texts-p-span-div p,
   .added-box-text {
-    width: 100%;
-    display: flex;
-    gap: 0.4rem;
-    padding: 0.1rem;
-    margin: 0.1rem;
-    width: 100%;
-    height: 100%;
+    /* width: 99%; */
+    /* display: flex; */
+    /* gap: 0.4rem; */
+    /* padding: 0.1rem; */
+    /* margin: 0.1rem; */
+    /* height: 99%; */
     font-size: 8px;
+    background: turquoise;
   }
   .added-box-text-titles h4 {
     font-size: 10px;
+    background: red;
+    width: 60%;
+  }
+  .added-box-text-titles h6 {
+    background: gray;
+    width: 40%;
   }
   .added-box-text {
     width: 100%;
     height: 100%;
+    background: blueviolet;
   }
 }
 
