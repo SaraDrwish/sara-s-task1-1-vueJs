@@ -531,13 +531,12 @@
           <h4>New company was added</h4>
           <h6>7 hours ago</h6>
         </div>
-        <p>
-          <span>Mohanad</span>
-          added a new company
-          <span>“Osolutions”</span>
-          assigned to
-          <span>Omar Tarek</span>
+        <!-- <div class="added-box-texts-p-span-div"> -->
+        <p class="added-box-texts-p-span-div">
+          <span> Mohanad </span> added a new company
+          <span> “Osolutions” </span> assigned to <span> Omar Tarek </span>
         </p>
+        <!-- </div> -->
       </div>
     </div>
 
@@ -929,14 +928,14 @@ p {
   padding-right: 19px;
 }
 
-.added-box-text p {
+.added-box-text .added-box-texts-p-span-div {
   font-size: 12px;
   /* padding: 1%; */
   width: 100%;
   color: #7d7c7c;
   text-align: left;
 }
-.added-box-text span {
+.added-box-text .added-box-texts-p-span-div span {
   color: #565656;
   font-weight: 400;
 }
@@ -984,6 +983,8 @@ p {
   }
   .svg-cricl-smal-right-4,
   .svg-cricl-smal-left-7,
+  .svg-cricl-smal-left-6-6,
+  .svg-cricl-smal-left-6,
   .un-wt-left-3,
   .svg-cricl-smal-left-4 {
     display: none;
@@ -1013,7 +1014,7 @@ p {
   .btn-icon-box button {
     gap: 30px;
     padding-right: 40px;
-    margin: 50px auto;
+    margin: 20px auto;
     width: 230px;
     height: 50px;
     font-size: 1rem;
@@ -1022,9 +1023,36 @@ p {
   .right-btm-box-added {
     top: unset;
     bottom: -7rem;
-    left: 0;
-    width: 100%;
+    left: 8%;
+    /* margin: 4rem auto 1rem auto; */
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 80%;
     font-size: 0.8rem;
+  }
+
+  .added-box-imeges,
+  .added-box-text .added-box-texts-p-span-div,
+  .added-box-text .added-box-texts-p-span-div span,
+  .added-box-texts-p-span-div p,
+  .added-box-text {
+    width: 100%;
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+  }
+  .added-box-text-titles h4 {
+    font-size: 10px;
+  }
+  .added-box-text {
+    width: 100%;
+    height: 100%;
   }
 }
 
