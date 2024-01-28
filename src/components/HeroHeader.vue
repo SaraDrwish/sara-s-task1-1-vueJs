@@ -943,10 +943,13 @@ p {
 
 /* ///////////////////////////////Start media //////////////////////// */
 
-@media (min-width: 320px) {
+@media (max-width: 769px) {
   body {
     width: 100%;
     height: 100%;
+  }
+  .HeroHeader {
+    padding-top: 75px;
   }
   .circl-shdow-bg {
     overflow: hidden;
@@ -979,7 +982,6 @@ p {
     font-size: 2rem;
     /* padding: 0.1rem 0 0.5rem 0; */
   }
-
   .svg-cricl-smal-right-4,
   .svg-cricl-smal-left-7,
   .un-wt-left-3,
@@ -997,7 +999,6 @@ p {
     height: 30px;
     left: 12px;
   }
-
   .svg-cricl-smal-right-2 {
     top: 400px;
   }
@@ -1012,9 +1013,18 @@ p {
   .btn-icon-box button {
     gap: 30px;
     padding-right: 40px;
-    margin: 55px auto;
-    width: 240px;
-    height: 60px;
+    margin: 50px auto;
+    width: 230px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .right-btm-box-added {
+    top: unset;
+    bottom: -7rem;
+    left: 0;
+    width: 100%;
+    font-size: 0.8rem;
   }
 }
 
