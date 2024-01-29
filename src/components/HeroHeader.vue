@@ -675,9 +675,15 @@ export default {};
 
 .svg-cricl-smal-left-7-7 {
   position: absolute;
+<<<<<<< HEAD
   left: 58px;
   /* top: 14px; */
   /* left: 48px; */
+=======
+  /* left: 58px;
+  top: 14px; */
+  left: 48px;
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   top: 12px;
   height: 23px;
   z-index: -1;
@@ -854,7 +860,8 @@ p {
   width: 454px;
   height: 85px;
   top: 488px;
-  left: 886px;
+  left: 800px;
+  /* right: 105px; */
   border-radius: 6px;
   /* background-color: rgb(239, 239, 239); */
   background-color: rgb(207, 206, 211);
@@ -952,12 +959,21 @@ p {
     width: 100%;
     height: 100%;
     overflow: hidden;
+<<<<<<< HEAD
   }
   .HeroHeader {
     overflow: hidden;
     width: 100%;
     height: 100%;
     position: relative;
+=======
+
+  }
+  .HeroHeader {
+    padding-top: 75px;
+    overflow: hidden;
+
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   }
 
   .circl-shdow-bg {
@@ -999,6 +1015,10 @@ p {
   .svg-cricl-smal-left-4 {
     display: none;
     overflow: hidden;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   }
   .svg-cricl-smal-left-1 {
     width: 22px;
@@ -1011,6 +1031,10 @@ p {
     height: 30px;
     left: 12px;
     overflow: hidden;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   }
   .svg-cricl-smal-right-2 {
     top: 400px;
@@ -1060,8 +1084,13 @@ p {
     font-size: 8px;
     /* background: turquoise; */
   }
+<<<<<<< HEAD
   .added-box-text-titles {
     width: 90%;
+=======
+  .added-box-text-titles{
+    width:90%;
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   }
   .added-box-text-titles h4 {
     font-size: 10px;

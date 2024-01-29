@@ -3,6 +3,7 @@
     <div class="logo">
       <a href="/"><img src="../assets/images/NavBar Logo.png" alt="logo" /></a>
     </div>
+<<<<<<< HEAD
 
     <div class="nav-list">
       <div v-if="isNavOpen" class="nav-links">
@@ -20,16 +21,46 @@
           <router-link to="/packages"><li>Packages</li></router-link>
         </ul>
       </div>
+=======
+    
+
+    <div class="nav-list">
+
+      <div v-if="isNavOpen" class="nav-links" >
+        
+      <ul>
+        <router-link to="/"  ><li>Home</li></router-link>
+        <router-link to="/features"  ><li>Features</li></router-link>
+        <router-link to= "/packages"  ><li>Packages</li></router-link>
+      </ul>
+      </div>
+
+      <div  v-else  class="nav-links-d-none-mob" >
+      <ul>
+        <router-link to="/"  ><li>Home</li></router-link>
+        <router-link to="/features"  ><li>Features</li></router-link>
+        <router-link to= "/packages"  ><li>Packages</li></router-link>
+      </ul>
+
+     
+    </div>
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
       <!-- <ul v-else  >
         <router-link to="/" @click="closeNav" ><li>Home</li></router-link>
         <router-link to="/features" @click="closeNav" ><li>Features</li></router-link>
         <router-link to="/packages" @click="closeNav" ><li>Packages</li></router-link>
       </ul> -->
+<<<<<<< HEAD
       <!-- Mobile layout: Show only in media -->
+=======
+                 <!-- Mobile layout: Show only in media -->
+   
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
 
       <router-view />
     </div>
 
+<<<<<<< HEAD
     <!-- /////////////////////// -->
 
     <svg
@@ -56,6 +87,30 @@
       <!-- <div class="nav-btns" v-else  > -->
       <button @click="closeNav"><a href="signIn">Sign In</a></button>
       <button @click="closeNav"><a href="freetrial">Free Trial</a></button>
+=======
+
+      <!-- /////////////////////// -->
+
+    <svg  class="svg-menuBar-icon" v-if="!isNavOpen" @click="toggleNav" viewBox="0 0 100 80" width="40" height="40"  >
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+
+      <!-- /////////////////////// -->
+
+      <div v-if="isNavOpen" class="nav-btns"   >
+        <button><a href="signIn"  >Sign In</a></button>
+        <button><a href="freetrial"  >Free Trial</a></button>
+      </div>
+
+
+     <div v-else   class="nav-btns nav-btns-d-none-mob"   >
+
+    <!-- <div class="nav-btns" v-else  > -->
+      <button @click="closeNav" ><a href="signIn" >Sign In</a></button>
+      <button @click="closeNav" ><a href="freetrial">Free Trial</a></button>
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
 
       <!-- svg start  -->
       <div class="lang-icon">
@@ -114,8 +169,11 @@
       </div>
 
       <!-- svg end  -->
+      
+
     </div>
 
+<<<<<<< HEAD
     <div class="naviconmeddiabox" v-if="isNavOpen" @click="closeNav">
       <svg
         class="svg-close-nav"
@@ -136,19 +194,69 @@
 
 <script setup>
 import { ref } from "vue";
+=======
+      <div class="naviconmeddiabox" v-if="isNavOpen" @click="closeNav" >
+        <svg  class="svg-close-nav"   @click="closeNav"   
+          viewPort="0 0 12 12" version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          @click.stop
+          >
+          
+         <line x1="1" y1="11" 
+          x2="11" y2="1" 
+          stroke="#3b2e8c" 
+          stroke-width="2"/>
+          <line x1="1" y1="1" 
+          x2="11" y2="11" 
+          stroke="#3b2e8c" 
+          stroke-width="2"/>
+        </svg>
+      </div>
+
+
+  
+
+
+
+  </div>
+</template>
+
+
+<!-- //////////////////////////////////////// -->
+
+
+<script setup>
+
+
+import { ref } from 'vue';
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
 
 const isNavOpen = ref(false);
 
 const toggleNav = () => {
+<<<<<<< HEAD
   isNavOpen.value = !isNavOpen.value;
+=======
+   isNavOpen.value = !isNavOpen.value;
+
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
 };
 
 const closeNav = () => {
   isNavOpen.value = false;
 };
+<<<<<<< HEAD
 </script>
 
 <!-- //////////////////////////////////////// -->
+=======
+
+
+</script>
+
+<!-- //////////////////////////////////////// -->
+
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
@@ -191,7 +299,11 @@ li:hover {
   font-family: "Cairo", sans-serif;
 }
 
+<<<<<<< HEAD
 .nav-list {
+=======
+.nav-list{
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   overflow: hidden;
 }
 .nav-links {
@@ -232,16 +344,26 @@ li:hover {
   padding-left: 18px;
 }
 
+<<<<<<< HEAD
 .svg-menuBar-icon {
+=======
+.svg-menuBar-icon{
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   fill: #3b2e8c;
   color: #3b2e8c;
   padding: 0.5rem;
   display: none;
   font-size: 4rem;
+<<<<<<< HEAD
   cursor: pointer;
 }
 
 .naviconmeddiabox {
+=======
+}
+
+.naviconmeddiabox{
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   /* width: 10px;
   height: 10px; */
   background-color: #a695e2;
@@ -263,10 +385,18 @@ li:hover {
     padding: 0.8rem;
     gap: 0.8rem;
     overflow: hidden;
+<<<<<<< HEAD
   }
   .svg-menuBar-icon {
     display: flex;
   }
+=======
+
+  }
+.svg-menuBar-icon{
+  display: flex;
+}
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   .nav-btns {
     gap: 0.2rem;
   }
@@ -288,15 +418,24 @@ li:hover {
     gap: 0.2rem;
     padding-left: 0.4rem;
   }
+<<<<<<< HEAD
 
   /* ///////////////////////nav in media 1 //////////////////////// */
 
   .naviconmeddiabox {
+=======
+  
+
+/* ///////////////////////nav in media 1 //////////////////////// */
+
+  .naviconmeddiabox{
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
     display: flex;
     width: 60%;
     /* width: 25%; */
     height: 25rem;
     overflow: hidden;
+<<<<<<< HEAD
   }
   .svg-close-nav {
     fill: #3b2e8c;
@@ -307,6 +446,17 @@ li:hover {
   .naviconmeddiabox:checked {
     display: none;
   }
+=======
+   }
+   .svg-close-nav{
+    fill: #3b2e8c;
+    color: #3b2e8c;
+    padding: 1.8rem ;
+   }
+   .svg-close-nav:checked , .naviconmeddiabox:checked{
+    display: none;
+   }
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
   ul {
     width: 25%;
     flex-direction: column;
@@ -321,6 +471,7 @@ li:hover {
     font-weight: 600;
     font-size: 14px;
     padding-left: 6%;
+<<<<<<< HEAD
   }
   li {
     width: 100%;
@@ -328,6 +479,13 @@ li:hover {
   .nav-btns button,
   .nav-btns,
   .lang-icon {
+=======
+    }
+    li{
+      width: 100%;
+    }
+ .nav-btns button ,.nav-btns , .lang-icon {
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -338,20 +496,36 @@ li:hover {
     font-size: 12px;
     padding: 0.2rem;
     overflow: hidden;
+<<<<<<< HEAD
   }
   .nav-btns {
+=======
+
+  }
+  .nav-btns{
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
     position: absolute;
     right: 25%;
     top: 40%;
     z-index: 2;
     width: 25%;
     overflow: hidden;
+<<<<<<< HEAD
   }
 
   .nav-links-d-none-mob,
   .nav-btns-d-none-mob {
     display: none;
   }
+=======
+
+  }
+
+  .nav-links-d-none-mob , .nav-btns-d-none-mob{
+    display: none;
+  }
+   
+>>>>>>> 14ff0d44364e9c2dbbc46cf50590c5004a0f8964
 }
 
 /* //////////////////////////////////////////// */
