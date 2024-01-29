@@ -531,12 +531,10 @@
           <h4>New company was added</h4>
           <h6>7 hours ago</h6>
         </div>
-        <!-- <div class="added-box-texts-p-span-div"> -->
         <p class="added-box-texts-p-span-div">
           <span> Mohanad </span> added a new company
           <span> “Osolutions” </span> assigned to <span> Omar Tarek </span>
         </p>
-        <!-- </div> -->
       </div>
     </div>
 
@@ -586,15 +584,12 @@ export default {};
 .un-wt-left-3 {
   display: flex;
   width: 60px;
-
   flex-direction: column;
   align-items: flex-start;
   gap: 1.4px;
-
   border-radius: 18px;
   border: 0.35px solid #fff;
   background: #fff;
-
   position: absolute;
   left: 270px;
   top: 180px;
@@ -610,16 +605,13 @@ export default {};
   letter-spacing: -0.06px;
   margin-left: 16px;
 }
-
 .un-wt-left-3-3 {
   position: absolute;
-
   left: 44px;
   top: 18px;
   height: 20px;
   z-index: -1;
 }
-
 .svg-cricl-smal-left-4 {
   position: absolute;
   left: 148px;
@@ -630,19 +622,16 @@ export default {};
   left: 100px;
   top: 100px;
 }
-
 .svg-cricl-smal-left-6 {
   position: absolute;
   left: 226px;
   top: 340px;
 }
-
 .svg-cricl-smal-left-6-6 {
   position: absolute;
   left: 229px;
   top: 337px;
 }
-
 .svg-cricl-smal-left-7 {
   width: 5%;
   background-color: #08041f;
@@ -655,11 +644,9 @@ export default {};
   letter-spacing: -0.06px;
   position: absolute;
   left: 410px;
-  /* left: 443px; */
   top: 328px;
   border-radius: 18px;
 }
-
 .svg-cricl-smal-left-7 p {
   width: 100%;
   background-color: #08041f;
@@ -672,23 +659,15 @@ export default {};
   letter-spacing: -0.06px;
   border-radius: 18px;
 }
-
 .svg-cricl-smal-left-7-7 {
   position: absolute;
   left: 58px;
-  /* top: 14px; */
   /* left: 48px; */
-  /* left: 58px;
-  top: 14px; */
-  left: 48px;
-
   top: 12px;
   height: 23px;
   z-index: -1;
 }
-
 /* ///// */
-
 .svg-cricl-smal-right-1 {
   position: absolute;
   right: 205px;
@@ -708,26 +687,20 @@ export default {};
   width: 15px;
   height: 15px;
 }
-
 .svg-cricl-smal-right-4 {
   position: absolute;
   right: 333px;
   top: 255px;
-
   border: 0.395px solid #08041f;
   background: #08041f;
-
   display: flex;
   width: 80px;
   align-items: flex-start;
   gap: 2.534px;
-
   border-radius: 18px;
 }
-
 .svg-cricl-smal-right-4 p {
   width: 100%;
-
   color: #fff;
   font-family: Cairo;
   font-size: 13.429px;
@@ -741,17 +714,13 @@ export default {};
   position: absolute;
   right: 67px;
   top: 22px;
-
   z-index: -1;
-
   width: 17px;
   height: 17px;
-
   fill: #08041f;
   stroke-width: 0.395px;
   stroke: #08041f;
 }
-
 /* ///// */
 .HeroHeader-layout-gray {
   width: 100%;
@@ -790,7 +759,6 @@ h3 {
   font-weight: 700;
   line-height: 152.4%; /* 79.248px */
   letter-spacing: -1.56px;
-
   background: var(
     --Hero-Gradient,
     linear-gradient(273deg, #db645d 25.7%, #b773ff 71.85%)
@@ -818,16 +786,12 @@ p {
   justify-content: flex-end;
   gap: 66px;
   padding-right: 40px;
-
   margin: 38px auto;
   text-align: center;
   width: 314px;
   height: 62px;
   border-radius: 28px;
   background: #3b2e8c;
-
-  /* border: 1px solid #000; */
-
   font-size: 20px;
   border: none;
   cursor: pointer;
@@ -837,13 +801,11 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
   transition: all 0.4s ease;
 }
 .btn-icon-box button:hover {
   box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 20px;
 }
-
 .HeroHeader a {
   border: none;
   outline: none;
@@ -852,7 +814,6 @@ p {
   width: 24px;
   height: 24px;
 }
-
 .right-btm-box-added {
   position: absolute;
   width: 454px;
@@ -861,11 +822,9 @@ p {
   left: 800px;
   /* right: 105px; */
   border-radius: 6px;
-  /* background-color: rgb(239, 239, 239); */
   background-color: rgb(207, 206, 211);
   border: 1px solid white;
   display: flex;
-  /* gap: 4px; */
   gap: 23px;
   padding-left: 18px;
   padding-right: 23px;
@@ -874,24 +833,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 23px; */
   padding: 1%;
   width: 90%;
-  /* background-color: rgba(150, 135, 164, 0.811); */
   padding: 19px;
-  /* margin: 8px; */
 }
-
 .added-box-imeges {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* gap: 23px; */
   width: 20%;
-  /* background: yellow; */
-  /* padding: 1%; */
 }
-
 .added-box-imeges img {
   width: 100%;
   height: 100%;
@@ -905,7 +856,6 @@ p {
   width: 33px;
   height: 20px;
 }
-
 .added-box-text {
   padding: 19px 0 17px 0;
   display: flex;
@@ -914,12 +864,9 @@ p {
   justify-content: center;
   width: 80%;
 }
-
 .added-box-text-titles {
-  /* padding: 1%; */
   display: flex;
   width: 100%;
-  /* width: 90%; */
   justify-content: space-between;
   align-content: center;
   margin: auto;
@@ -932,15 +879,12 @@ p {
 }
 .added-box-text-titles h6 {
   font-size: 8px;
-  /* align-self: flex-end; */
   font-weight: 700;
   padding-top: 4px;
   padding-right: 19px;
 }
-
 .added-box-text .added-box-texts-p-span-div {
   font-size: 12px;
-  /* padding: 1%; */
   width: 100%;
   color: #7d7c7c;
   text-align: left;
@@ -964,7 +908,6 @@ p {
     height: 100%;
     position: relative;
   }
-
   .circl-shdow-bg {
     overflow: hidden;
     left: -14%;
@@ -1038,31 +981,17 @@ p {
 
   .right-btm-box-added {
     top: 0;
-    /* bottom: -7rem; */
     left: 8%;
-    /* margin: 4rem auto 1rem auto; */
-    /* text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
     width: 80%;
     font-size: 0.8rem;
     position: relative;
   }
-
   .added-box-imeges,
   .added-box-text .added-box-texts-p-span-div,
   .added-box-text .added-box-texts-p-span-div span,
   .added-box-texts-p-span-div p,
   .added-box-text {
-    /* width: 99%; */
-    /* display: flex; */
-    /* gap: 0.4rem; */
-    /* padding: 0.1rem; */
-    /* margin: 0.1rem; */
-    /* height: 99%; */
     font-size: 8px;
-    /* background: turquoise; */
   }
   .added-box-text-titles {
     width: 90%;
@@ -1072,17 +1001,14 @@ p {
   }
   .added-box-text-titles h4 {
     font-size: 10px;
-    /* background: red; */
     width: 60%;
   }
   .added-box-text-titles h6 {
-    /* background: gray; */
     width: 40%;
   }
   .added-box-text {
     width: 100%;
     height: 100%;
-    /* background: blueviolet; */
   }
 }
 
