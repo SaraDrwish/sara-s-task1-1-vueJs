@@ -675,9 +675,9 @@ export default {};
 
 .svg-cricl-smal-left-7-7 {
   position: absolute;
-  /* left: 58px;
-  top: 14px; */
-  left: 48px;
+  left: 58px;
+  /* top: 14px; */
+  /* left: 48px; */
   top: 12px;
   height: 23px;
   z-index: -1;
@@ -954,9 +954,12 @@ p {
     overflow: hidden;
   }
   .HeroHeader {
-    padding-top: 75px;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
+
   .circl-shdow-bg {
     overflow: hidden;
     left: -14%;
@@ -980,7 +983,7 @@ p {
   }
   p {
     margin: 1rem auto;
-    width: 77%;
+    width: -77%;
     font-size: 0.8rem;
   }
   h2,
@@ -1030,8 +1033,8 @@ p {
   }
 
   .right-btm-box-added {
-    top: unset;
-    bottom: -7rem;
+    top: 0;
+    /* bottom: -7rem; */
     left: 8%;
     /* margin: 4rem auto 1rem auto; */
     /* text-align: center;
@@ -1040,6 +1043,7 @@ p {
     justify-content: center; */
     width: 80%;
     font-size: 0.8rem;
+    position: relative;
   }
 
   .added-box-imeges,

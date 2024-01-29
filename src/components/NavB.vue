@@ -238,6 +238,7 @@ li:hover {
   padding: 0.5rem;
   display: none;
   font-size: 4rem;
+  cursor: pointer;
 }
 
 .naviconmeddiabox {
