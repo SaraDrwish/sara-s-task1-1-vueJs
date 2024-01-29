@@ -180,7 +180,7 @@ li:hover {
   fill: #3b2e8c;
   color: #3b2e8c;
   padding: 0.5rem;
-  display: flex;
+  display: none;
   font-size: 4rem;
 }
 
@@ -206,7 +206,9 @@ li:hover {
     padding: 0.8rem;
     gap: 0.8rem;
   }
-
+.svg-menuBar-icon{
+  display: flex;
+}
   .nav-btns {
     gap: 0.2rem;
   }
@@ -234,7 +236,8 @@ li:hover {
 
   .naviconmeddiabox{
     display: flex;
-    width: 25%;
+    width: 60%;
+    /* width: 25%; */
     height: 25rem;
    }
    .svg-close-nav{
@@ -242,7 +245,7 @@ li:hover {
     color: #3b2e8c;
     padding: 1.8rem ;
    }
-   .svg-close-nav:checked{
+   .svg-close-nav:checked .naviconmeddiabox{
     display: none;
    }
   ul {
@@ -253,7 +256,7 @@ li:hover {
     justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
-    right: 0%;
+    right: 25%;
     top: 16%;
     z-index: 2;
     font-weight: 600;
@@ -276,7 +279,7 @@ li:hover {
   }
   .nav-btns{
     position: absolute;
-    right: 0%;
+    right: 25%;
     top: 40%;
     z-index: 2;
     width: 25%;
