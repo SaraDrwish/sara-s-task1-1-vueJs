@@ -49,7 +49,9 @@ export default {
   --lightGrayColor: #ededed;
   --MedGrayColor: #eaeaeabf;
   --darkGrayColor: #b3b3b3;
-  --veryDarkGrayText: #454545eb;
+  --veryDarkGrayText1: #454545eb;
+  --colorMedGrayText: #5b5b5bc9;
+  --veryveryDarkGrayText2: #303030;
 }
 
 * {
