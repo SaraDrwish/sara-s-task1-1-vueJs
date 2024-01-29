@@ -5,25 +5,31 @@
     </div>
     
 
-    
-
     <div class="nav-list">
 
-      
-      <div v-if="isNavOpen"  >
+      <div v-if="isNavOpen" class="nav-links" >
+        
       <ul>
         <router-link to="/"  ><li>Home</li></router-link>
         <router-link to="/features"  ><li>Features</li></router-link>
-        <router-link to="/packages"  ><li>Packages</li></router-link>
+        <router-link to= "/packages"  ><li>Packages</li></router-link>
+      </ul>
+      </div>
+
+      <div  v-else  class="nav-links-d-none-mob" >
+      <ul>
+        <router-link to="/"  ><li>Home</li></router-link>
+        <router-link to="/features"  ><li>Features</li></router-link>
+        <router-link to= "/packages"  ><li>Packages</li></router-link>
       </ul>
 
      
     </div>
-      <ul v-else  >
+      <!-- <ul v-else  >
         <router-link to="/" @click="closeNav" ><li>Home</li></router-link>
         <router-link to="/features" @click="closeNav" ><li>Features</li></router-link>
         <router-link to="/packages" @click="closeNav" ><li>Packages</li></router-link>
-      </ul>
+      </ul> -->
                  <!-- Mobile layout: Show only in media -->
    
 
@@ -33,7 +39,7 @@
 
       <!-- /////////////////////// -->
 
-    <svg  class="svg-menuBar-icon"  @click="toggleNav" viewBox="0 0 100 80" width="40" height="40">
+    <svg  class="svg-menuBar-icon" v-if="!isNavOpen" @click="toggleNav" viewBox="0 0 100 80" width="40" height="40"  >
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>
         <rect y="60" width="100" height="20"></rect>
@@ -41,13 +47,15 @@
 
       <!-- /////////////////////// -->
 
-       <!-- Mobile navigation buttons -->
-       <div v-if="isNavOpen" class="nav-btns"   >
+      <div v-if="isNavOpen" class="nav-btns"   >
         <button><a href="signIn"  >Sign In</a></button>
         <button><a href="freetrial"  >Free Trial</a></button>
       </div>
 
-    <div class="nav-btns" v-else  >
+
+     <div v-else   class="nav-btns nav-btns-d-none-mob"   >
+
+    <!-- <div class="nav-btns" v-else  > -->
       <button @click="closeNav" ><a href="signIn" >Sign In</a></button>
       <button @click="closeNav" ><a href="freetrial">Free Trial</a></button>
 
@@ -113,7 +121,7 @@
     </div>
 
       <div class="naviconmeddiabox" v-if="isNavOpen" @click="closeNav" >
-        <svg  class="svg-close-nav"     
+        <svg  class="svg-close-nav"   @click="closeNav"   
           viewPort="0 0 12 12" version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           @click.stop
@@ -204,6 +212,18 @@ li:hover {
   gap: 23px;
   font-family: "Cairo", sans-serif;
 }
+
+.nav-list{
+  overflow: hidden;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+}
+
 .nav-btns button {
   font-family: "Cairo";
   background-color: white;
@@ -348,6 +368,10 @@ li:hover {
     width: 25%;
     overflow: hidden;
 
+  }
+
+  .nav-links-d-none-mob , .nav-btns-d-none-mob{
+    display: none;
   }
    
 }
