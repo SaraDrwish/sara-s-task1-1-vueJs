@@ -7,19 +7,10 @@
             <div
               class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2 bg-gray-200"
             >
-              <div
-                class="rounded-[50%] absolute m-auto text-center w-[77px] h-[77px] bg-[#6C56BD4A]"
-              >
-                <!-- <img
-                  class="absolute left-0 top-0 w-[77px] h-[77px]"
-                  src="../assets/images/Ellipse 87.svg"
-                  alt="Ellipse 87 "
-                />
-                <img
-                  class="left-2 top-2 w-[60px] h-[60px]"
-                  src="../assets/images/Ellipse 72.svg"
-                  alt="Ellips  "
-                /> -->
+              <div class="w-[20%] relative">
+                <span
+                  class="rounded-[50%] absolute m-auto text-center w-[77px] h-[77px] bg-[#6C56BD4A]"
+                ></span>
                 <span
                   class="w-[60px] h-[60px] absolute top-[11%] left-[11%] m-auto text-center bg-[#5F45BF] rounded-[50%]"
                 >
@@ -40,9 +31,10 @@
             <div
               class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2 bg-gray-200"
             >
-              <div
-                class="rounded-[50%] absolute m-auto text-center w-[77px] h-[77px] bg-[#CCC5E3E3]"
-              >
+              <div class="w-[20%] relative">
+                <span
+                  class="rounded-[50%] absolute m-auto text-center w-[77px] h-[77px] bg-[#CCC5E3E3]"
+                ></span>
                 <span
                   class="w-[60px] h-[60px] absolute top-[11%] left-[11%] m-auto text-center bg-[#B88FC6] rounded-[50%]"
                 >
