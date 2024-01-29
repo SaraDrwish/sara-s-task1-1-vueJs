@@ -208,21 +208,22 @@ li:hover {
   padding: 12px 22px;
   font-size: 16px;
   border-radius: 6px;
-  border: 1px solid #3b2e8c;
+  /* border: 1px solid #3b2e8c; */
   color: #3b2e8c;
   cursor: pointer;
   transition: all 0.4s ease;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid #000000;
 }
 .nav-btns button:nth-child(2) {
   background-color: #3b2e8c;
   color: white;
-  /* color: #ededed; */
 }
-
 .nav-btns button:hover {
   background-color: #ededed;
-  border: 1px solid #674fc2;
   color: #674fc2;
+  /* border: 1px solid #674fc2; */
+  box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 20px;
 }
 .lang-icon {
   display: flex;
@@ -339,12 +340,17 @@ li:hover {
     overflow: hidden;
   }
   .nav-btns {
-    position: absolute;
     right: 25%;
     top: 40%;
-    z-index: 2;
     width: 25%;
+
+    position: absolute;
+    /* right: 20%; */
+    /* top: 35%; */
+    /* width: 29%; */
+    z-index: 2;
     overflow: hidden;
+    /* padding: 1rem; */
   }
 
   .nav-links-d-none-mob,

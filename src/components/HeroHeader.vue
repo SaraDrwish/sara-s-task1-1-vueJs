@@ -554,6 +554,7 @@ export default {};
   font-family: Gotham;
   text-transform: capitalize;
   position: relative;
+  overflow: hidden;
 }
 
 .svg-cricl-smal-left-1 {
@@ -682,8 +683,9 @@ export default {};
 }
 .svg-cricl-smal-right-3 {
   position: absolute;
-  right: 238px;
-  top: 354px;
+  right: 111px;
+  /* top: 354px; */
+  top: 411px;
   width: 15px;
   height: 15px;
 }
@@ -793,7 +795,6 @@ p {
   border-radius: 28px;
   background: #3b2e8c;
   font-size: 20px;
-  border: none;
   cursor: pointer;
   margin-bottom: 160px;
   color: white;
@@ -802,6 +803,9 @@ p {
   font-weight: 500;
   line-height: normal;
   transition: all 0.4s ease;
+  /* border: none; */
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid #000000;
 }
 .btn-icon-box button:hover {
   box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 20px;
@@ -818,9 +822,9 @@ p {
   position: absolute;
   width: 454px;
   height: 85px;
-  top: 488px;
-  left: 800px;
-  /* right: 105px; */
+  top: 400px;
+  /* left: 800px; */
+  right: 105px;
   border-radius: 6px;
   background-color: rgb(207, 206, 211);
   border: 1px solid white;
@@ -960,7 +964,7 @@ p {
     overflow: hidden;
   }
   .svg-cricl-smal-right-2 {
-    top: 400px;
+    top: 411px;
   }
   .svg-cricl-smal-right-1 {
     right: 0;
@@ -980,7 +984,8 @@ p {
   }
 
   .right-btm-box-added {
-    top: 0;
+    /* top: 0; */
+    top: 1rem;
     left: 8%;
     width: 80%;
     font-size: 0.8rem;
