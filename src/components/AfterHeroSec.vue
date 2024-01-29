@@ -4,9 +4,13 @@
       <div class="container flex w-[calc(100%-294px)] m-auto bg-slate-300">
         <div class="bigBox flex flex-col w-full gap-[45px]">
           <div class="top-smallboxes flex gap-[45px] w-full">
-            <div class="flex gap-[8px] w-[100%] text-[#6C56BD4A] bg-gray-100">
-              <div class="rounded-[50%] relative">
-                <img
+            <div
+              class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2 bg-gray-200"
+            >
+              <div
+                class="rounded-[50%] absolute m-auto text-center w-[77px] h-[77px] bg-[#6C56BD4A]"
+              >
+                <!-- <img
                   class="absolute left-0 top-0 w-[77px] h-[77px]"
                   src="../assets/images/Ellipse 87.svg"
                   alt="Ellipse 87 "
@@ -15,31 +19,42 @@
                   class="left-2 top-2 w-[60px] h-[60px]"
                   src="../assets/images/Ellipse 72.svg"
                   alt="Ellips  "
-                />
+                /> -->
+                <span
+                  class="w-[60px] h-[60px] absolute top-[11%] left-[11%] m-auto text-center bg-[#5F45BF] rounded-[50%]"
+                >
+                </span>
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col w-[70%] ml-auto">
                 <img
                   class="w-[24px] h-[24px]"
                   src="../assets/images/translate.svg"
                   alt="translate"
                 />
-                <p>
+                <p class="text-[#303030]">
                   Offered in multiple languages, serving the Arab region in
                   particular
                 </p>
               </div>
             </div>
-            <div class="flex gap-[8px] w-[100%] text-[#6C56BD4A] bg-[#3d3b45]">
-              <div class="w-[60px] h-[60px] rounded-[50%] bg-[#843a7d]">
-                plue circl 2
+            <div
+              class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2 bg-gray-200"
+            >
+              <div
+                class="rounded-[50%] absolute m-auto text-center w-[77px] h-[77px] bg-[#CCC5E3E3]"
+              >
+                <span
+                  class="w-[60px] h-[60px] absolute top-[11%] left-[11%] m-auto text-center bg-[#B88FC6] rounded-[50%]"
+                >
+                </span>
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col w-[70%] ml-auto">
                 <img
                   class="w-[24px] h-[24px]"
                   src="../assets/images/element-2.svg"
                   alt="element-2.svg"
                 />
-                <p>Simple and advanced user interface</p>
+                <p class="text-[#303030]">Simple and advanced user interface</p>
               </div>
             </div>
             <div class="flex gap-[8px] w-[100%] text-[#6C56BD4A] bg-[#3d3b45]">
@@ -50,7 +65,7 @@
                   src="../assets/images/data-2.svg"
                   alt="data-2.svg"
                 />
-                <p>One Place for all tasks and data</p>
+                <p class="text-[#303030]">One Place for all tasks and data</p>
               </div>
             </div>
           </div>
