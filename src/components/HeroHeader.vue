@@ -1045,21 +1045,21 @@ p {
     /* margin: 0.1rem; */
     /* height: 99%; */
     font-size: 8px;
-    background: turquoise;
+    /* background: turquoise; */
   }
   .added-box-text-titles h4 {
     font-size: 10px;
-    background: red;
+    /* background: red; */
     width: 60%;
   }
   .added-box-text-titles h6 {
-    background: gray;
+    /* background: gray; */
     width: 40%;
   }
   .added-box-text {
     width: 100%;
     height: 100%;
-    background: blueviolet;
+    /* background: blueviolet; */
   }
 }
 

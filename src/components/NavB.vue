@@ -1,8 +1,28 @@
 <template>
+  <div class="media-nav">
+    <div class="meida-nav-bar-icon">
+      <img
+        class="meida-nav-bar-icon-img"
+        src="../assets/images/icons8-menu-50.png"
+        alt="icons8-menu-50.png"
+      />
+    </div>
+  </div>
   <div class="NavB">
     <div class="logo">
       <a href="/"><img src="../assets/images/NavBar Logo.png" alt="logo" /></a>
     </div>
+    <!-- //////////////// -->
+    <div class="media-nav">
+      <div class="meida-nav-bar-icon">
+        <img
+          class="meida-nav-bar-icon-img"
+          src="../assets/images/icons8-menu-50.png"
+          alt="icons8-menu-50.png"
+        />
+      </div>
+    </div>
+    <!-- //////////////// -->
     <div class="nav-list">
       <ul>
         <router-link to="/"><li>Home</li></router-link>
@@ -146,6 +166,13 @@ li:hover {
   padding-left: 18px;
 }
 
+.meida-nav-bar-icon {
+  display: none;
+}
+.media-nav {
+  display: none;
+}
+
 /* /////////////////start media //////////////////////// */
 @media (max-width: 769px) {
   .NavB {
@@ -176,6 +203,33 @@ li:hover {
     width: 1.4rem;
     gap: 0.2rem;
     padding-left: 0.4rem;
+  }
+  .meida-nav-bar-icon {
+    display: flex;
+    width: 1.4rem;
+    height: 1.2rem;
+    cursor: pointer;
+    /* fill: #3b2e8c;
+    color: #3b2e8c; */
+  }
+  .media-nav {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50%;
+    width: 50%;
+    z-index: 999;
+  }
+  .media-nav::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 11rem;
+    height: 33rem;
+    background: palevioletred;
+    z-index: 99999;
   }
 }
 
