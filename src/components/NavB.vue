@@ -183,15 +183,12 @@ li {
 li:hover {
   color: #3b2e8c;
 }
-.logo {
-  /* padding-left: 105px; */
-}
+
 .nav-btns {
   display: flex;
   gap: 23px;
   font-family: "Cairo", sans-serif;
 }
-
 .nav-list {
   overflow: hidden;
 }
@@ -202,7 +199,6 @@ li:hover {
   align-items: center;
   gap: 39px;
 }
-
 .nav-btns button {
   font-family: "Cairo";
   background-color: white;

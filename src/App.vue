@@ -2,19 +2,22 @@
   <div class="appClassGeneral">
     <NavB />
     <HeroHeader />
-    <SignUp />
+    <AfterHeroSec />
+    <!-- <SignUp /> -->
   </div>
 </template>
 
 <script>
 import NavB from "./components/NavB.vue";
 import HeroHeader from "./components/HeroHeader.vue";
+import AfterHeroSec from "./components/AfterHeroSec.vue";
 // import SignUp from "./components/SignUp.vue";
 export default {
   name: "App",
   components: {
     NavB,
     HeroHeader,
+    AfterHeroSec,
     // SignUp,
   },
 };
