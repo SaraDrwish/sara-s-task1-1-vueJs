@@ -757,6 +757,7 @@ export default {};
   left: 0;
   top: 0;
   z-index: -1;
+  overflow: hidden;
 }
 .circl-shdow-bg {
   margin: auto;

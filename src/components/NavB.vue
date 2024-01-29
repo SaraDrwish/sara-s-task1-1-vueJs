@@ -4,10 +4,10 @@
       <a href="/"><img src="../assets/images/NavBar Logo.png" alt="logo" /></a>
     </div>
     <div class="nav-list">
-      <ul>
-        <router-link to="/"><li>Home</li></router-link>
-        <router-link to="/features"><li>Features</li></router-link>
-        <router-link to="/packages"><li>Packages</li></router-link>
+      <ul v-show="isNavOpen" >
+        <router-link to="/" @click="closeNav" ><li>Home</li></router-link>
+        <router-link to="/features" @click="closeNav" ><li>Features</li></router-link>
+        <router-link to="/packages" @click="closeNav" ><li>Packages</li></router-link>
       </ul>
       <router-view />
     </div>
@@ -15,7 +15,7 @@
 
       <!-- /////////////////////// -->
 
-    <svg  class="svg-menuBar-icon" viewBox="0 0 100 80" width="40" height="40">
+    <svg  class="svg-menuBar-icon"  @click="toggleNav" viewBox="0 0 100 80" width="40" height="40">
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>
         <rect y="60" width="100" height="20"></rect>
@@ -23,9 +23,9 @@
 
       <!-- /////////////////////// -->
 
-    <div class="nav-btns">
-      <button><a href="signIn">Sign In</a></button>
-      <button><a href="freetrial">Free Trial</a></button>
+    <div class="nav-btns" v-show="isNavOpen">
+      <button @click="closeNav" ><a href="signIn" >Sign In</a></button>
+      <button @click="closeNav" ><a href="freetrial">Free Trial</a></button>
 
       <!-- svg start  -->
       <div class="lang-icon">
@@ -88,8 +88,8 @@
 
     </div>
 
-      <div class="naviconmeddiabox">
-        <svg  class="svg-close-nav" 
+      <div class="naviconmeddiabox" v-if="isNavOpen" @click="closeNav" >
+        <svg  class="svg-close-nav"    @click="closeNav"
           viewPort="0 0 12 12" version="1.1"
           xmlns="http://www.w3.org/2000/svg">
          <line x1="1" y1="11" 
@@ -106,7 +106,30 @@
   </div>
 </template>
 
-<script setup></script>
+
+<!-- //////////////////////////////////////// -->
+
+
+<script setup>
+
+
+import { ref } from 'vue';
+
+const isNavOpen = ref(false);
+
+const toggleNav = () => {
+  isNavOpen.value = !isNavOpen.value;
+};
+
+const closeNav = () => {
+  isNavOpen.value = false;
+};
+
+
+</script>
+
+<!-- //////////////////////////////////////// -->
+
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
