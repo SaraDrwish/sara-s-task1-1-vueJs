@@ -1,40 +1,61 @@
 <template>
-  <div class="media-nav">
-    <div class="meida-nav-bar-icon">
-      <img
-        class="meida-nav-bar-icon-img"
-        src="../assets/images/icons8-menu-50.png"
-        alt="icons8-menu-50.png"
-      />
-    </div>
-  </div>
   <div class="NavB">
     <div class="logo">
       <a href="/"><img src="../assets/images/NavBar Logo.png" alt="logo" /></a>
     </div>
-    <!-- //////////////// -->
-    <div class="media-nav">
-      <div class="meida-nav-bar-icon">
-        <img
-          class="meida-nav-bar-icon-img"
-          src="../assets/images/icons8-menu-50.png"
-          alt="icons8-menu-50.png"
-        />
-      </div>
-    </div>
-    <!-- //////////////// -->
+
     <div class="nav-list">
-      <ul>
-        <router-link to="/"><li>Home</li></router-link>
-        <router-link to="/features"><li>Features</li></router-link>
-        <router-link to="/packages"><li>Packages</li></router-link>
-      </ul>
+      <div v-if="isNavOpen" class="nav-links">
+        <ul>
+          <router-link to="/"><li>Home</li></router-link>
+          <router-link to="/features"><li>Features</li></router-link>
+          <router-link to="/packages"><li>Packages</li></router-link>
+        </ul>
+      </div>
+
+      <div v-else class="nav-links-d-none-mob">
+        <ul>
+          <router-link to="/"><li>Home</li></router-link>
+          <router-link to="/features"><li>Features</li></router-link>
+          <router-link to="/packages"><li>Packages</li></router-link>
+        </ul>
+      </div>
+      <!-- <ul v-else  >
+        <router-link to="/" @click="closeNav" ><li>Home</li></router-link>
+        <router-link to="/features" @click="closeNav" ><li>Features</li></router-link>
+        <router-link to="/packages" @click="closeNav" ><li>Packages</li></router-link>
+      </ul> -->
+      <!-- Mobile layout: Show only in media -->
+
       <router-view />
     </div>
 
-    <div class="nav-btns">
+    <!-- /////////////////////// -->
+
+    <svg
+      class="svg-menuBar-icon"
+      v-if="!isNavOpen"
+      @click="toggleNav"
+      viewBox="0 0 100 80"
+      width="40"
+      height="40"
+    >
+      <rect width="100" height="20"></rect>
+      <rect y="30" width="100" height="20"></rect>
+      <rect y="60" width="100" height="20"></rect>
+    </svg>
+
+    <!-- /////////////////////// -->
+
+    <div v-if="isNavOpen" class="nav-btns">
       <button><a href="signIn">Sign In</a></button>
       <button><a href="freetrial">Free Trial</a></button>
+    </div>
+
+    <div v-else class="nav-btns nav-btns-d-none-mob">
+      <!-- <div class="nav-btns" v-else  > -->
+      <button @click="closeNav"><a href="signIn">Sign In</a></button>
+      <button @click="closeNav"><a href="freetrial">Free Trial</a></button>
 
       <!-- svg start  -->
       <div class="lang-icon">
@@ -91,17 +112,50 @@
           </g>
         </svg>
       </div>
+
       <!-- svg end  -->
+    </div>
+
+    <div class="naviconmeddiabox" v-if="isNavOpen" @click="closeNav">
+      <svg
+        class="svg-close-nav"
+        @click="closeNav"
+        viewPort="0 0 12 12"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        @click.stop
+      >
+        <line x1="1" y1="11" x2="11" y2="1" stroke="#3b2e8c" stroke-width="2" />
+        <line x1="1" y1="1" x2="11" y2="11" stroke="#3b2e8c" stroke-width="2" />
+      </svg>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<!-- //////////////////////////////////////// -->
+
+<script setup>
+import { ref } from "vue";
+
+const isNavOpen = ref(false);
+
+const toggleNav = () => {
+  isNavOpen.value = !isNavOpen.value;
+};
+
+const closeNav = () => {
+  isNavOpen.value = false;
+};
+</script>
+
+<!-- //////////////////////////////////////// -->
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
 
 .NavB {
+  overflow: hidden;
+
   width: 100%;
   font-family: "Cairo", sans-serif;
   margin: 0 auto 0 auto;
@@ -136,6 +190,18 @@ li:hover {
   gap: 23px;
   font-family: "Cairo", sans-serif;
 }
+
+.nav-list {
+  overflow: hidden;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+}
+
 .nav-btns button {
   font-family: "Cairo";
   background-color: white;
@@ -166,11 +232,25 @@ li:hover {
   padding-left: 18px;
 }
 
-.meida-nav-bar-icon {
+.svg-menuBar-icon {
+  fill: #3b2e8c;
+  color: #3b2e8c;
+  padding: 0.5rem;
   display: none;
+  font-size: 4rem;
 }
-.media-nav {
+
+.naviconmeddiabox {
+  /* width: 10px;
+  height: 10px; */
+  background-color: #a695e2;
+  color: #0f0a30;
+  border-radius: 1rem;
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 /* /////////////////start media //////////////////////// */
@@ -181,8 +261,11 @@ li:hover {
     overflow: hidden;
     padding: 0.8rem;
     gap: 0.8rem;
+    overflow: hidden;
   }
-
+  .svg-menuBar-icon {
+    display: flex;
+  }
   .nav-btns {
     gap: 0.2rem;
   }
@@ -204,34 +287,71 @@ li:hover {
     gap: 0.2rem;
     padding-left: 0.4rem;
   }
-  .meida-nav-bar-icon {
+
+  /* ///////////////////////nav in media 1 //////////////////////// */
+
+  .naviconmeddiabox {
     display: flex;
-    width: 1.4rem;
-    height: 1.2rem;
-    cursor: pointer;
-    /* fill: #3b2e8c;
-    color: #3b2e8c; */
+    width: 60%;
+    /* width: 25%; */
+    height: 25rem;
+    overflow: hidden;
   }
-  .media-nav {
-    display: flex;
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 50%;
-    width: 50%;
-    z-index: 999;
+  .svg-close-nav {
+    fill: #3b2e8c;
+    color: #3b2e8c;
+    padding: 1.8rem;
   }
-  .media-nav::after {
+  .svg-close-nav:checked,
+  .naviconmeddiabox:checked {
+    display: none;
+  }
+  ul {
+    width: 25%;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    width: 11rem;
-    height: 33rem;
-    background: palevioletred;
-    z-index: 99999;
+    right: 25%;
+    top: 16%;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 6%;
+  }
+  li {
+    width: 100%;
+  }
+  .nav-btns button,
+  .nav-btns,
+  .lang-icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    gap: 0.6rem;
+    font-size: 12px;
+    padding: 0.2rem;
+    overflow: hidden;
+  }
+  .nav-btns {
+    position: absolute;
+    right: 25%;
+    top: 40%;
+    z-index: 2;
+    width: 25%;
+    overflow: hidden;
+  }
+
+  .nav-links-d-none-mob,
+  .nav-btns-d-none-mob {
+    display: none;
   }
 }
 
-/* ////////////////end media ///////////////////// */
+/* //////////////////////////////////////////// */
 </style>
