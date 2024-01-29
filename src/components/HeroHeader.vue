@@ -950,9 +950,13 @@ p {
   body {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+
   }
   .HeroHeader {
     padding-top: 75px;
+    overflow: hidden;
+
   }
   .circl-shdow-bg {
     overflow: hidden;
@@ -992,6 +996,8 @@ p {
   .un-wt-left-3,
   .svg-cricl-smal-left-4 {
     display: none;
+    overflow: hidden;
+
   }
   .svg-cricl-smal-left-1 {
     width: 22px;
@@ -1003,6 +1009,8 @@ p {
     width: 30px;
     height: 30px;
     left: 12px;
+    overflow: hidden;
+
   }
   .svg-cricl-smal-right-2 {
     top: 400px;

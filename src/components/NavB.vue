@@ -112,6 +112,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
 
 .NavB {
+  overflow: hidden;
+
   width: 100%;
   font-family: "Cairo", sans-serif;
   margin: 0 auto 0 auto;
@@ -205,6 +207,8 @@ li:hover {
     overflow: hidden;
     padding: 0.8rem;
     gap: 0.8rem;
+    overflow: hidden;
+
   }
 .svg-menuBar-icon{
   display: flex;
@@ -239,13 +243,14 @@ li:hover {
     width: 60%;
     /* width: 25%; */
     height: 25rem;
+    overflow: hidden;
    }
    .svg-close-nav{
     fill: #3b2e8c;
     color: #3b2e8c;
     padding: 1.8rem ;
    }
-   .svg-close-nav:checked .naviconmeddiabox{
+   .svg-close-nav:checked , .naviconmeddiabox:checked{
     display: none;
    }
   ul {
@@ -276,6 +281,8 @@ li:hover {
     gap: 0.6rem;
     font-size: 12px;
     padding: 0.2rem;
+    overflow: hidden;
+
   }
   .nav-btns{
     position: absolute;
@@ -283,6 +290,8 @@ li:hover {
     top: 40%;
     z-index: 2;
     width: 25%;
+    overflow: hidden;
+
   }
    
 }
