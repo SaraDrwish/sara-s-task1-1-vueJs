@@ -71,8 +71,13 @@
           </g>
         </svg>
       </div>
+
       <!-- svg end  -->
+
     </div>
+
+      <div class="naviconmeddiabox"></div>
+
   </div>
 </template>
 
@@ -146,6 +151,19 @@ li:hover {
   padding-left: 18px;
 }
 
+.naviconmeddiabox{
+  /* width: 10px;
+  height: 10px; */
+  background-color: #a695e2;
+  color: #0f0a30;
+  border-radius: 1rem;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 /* /////////////////start media //////////////////////// */
 @media (max-width: 769px) {
   .NavB {
@@ -177,6 +195,62 @@ li:hover {
     gap: 0.2rem;
     padding-left: 0.4rem;
   }
+  
+
+/* ///////////////////////nav in media 1 //////////////////////// */
+
+  .naviconmeddiabox{
+    display: flex;
+    width: 11rem;
+    /* width: 16rem; */
+    height: 25rem;
+    /* background-color: turquoise; */
+   }
+  ul {
+    width: 25%;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    /* transform: translate(15%,-15%); */
+    right: 0%;
+    top: 16%;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 14px;
+    /* background-color: #ededed; */
+    padding-left: 6%;
+    }
+    li{
+      width: 100%;
+      /* background-color: yellow; */
+      /* padding: 1%; */
+    }
+ .nav-btns button ,.nav-btns , .lang-icon {
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    gap: 0.6rem;
+    font-size: 12px;
+    padding: 0.2rem;
+    /* background-color: violet */
+  }
+  .nav-btns{
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    z-index: 2;
+    /* background-color: rgb(129, 168, 207); */
+    width: 25%;
+  }
+   
 }
 
 /* ////////////////end media ///////////////////// */
