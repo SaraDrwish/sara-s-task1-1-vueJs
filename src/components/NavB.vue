@@ -12,6 +12,17 @@
       <router-view />
     </div>
 
+
+      <!-- /////////////////////// -->
+
+    <svg  class="svg-menuBar-icon" viewBox="0 0 100 80" width="40" height="40">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+
+      <!-- /////////////////////// -->
+
     <div class="nav-btns">
       <button><a href="signIn">Sign In</a></button>
       <button><a href="freetrial">Free Trial</a></button>
@@ -73,10 +84,24 @@
       </div>
 
       <!-- svg end  -->
+      
 
     </div>
 
-      <div class="naviconmeddiabox"></div>
+      <div class="naviconmeddiabox">
+        <svg  class="svg-close-nav" 
+          viewPort="0 0 12 12" version="1.1"
+          xmlns="http://www.w3.org/2000/svg">
+         <line x1="1" y1="11" 
+          x2="11" y2="1" 
+          stroke="#3b2e8c" 
+          stroke-width="2"/>
+          <line x1="1" y1="1" 
+          x2="11" y2="11" 
+          stroke="#3b2e8c" 
+          stroke-width="2"/>
+        </svg>
+      </div>
 
   </div>
 </template>
@@ -151,6 +176,14 @@ li:hover {
   padding-left: 18px;
 }
 
+.svg-menuBar-icon{
+  fill: #3b2e8c;
+  color: #3b2e8c;
+  padding: 0.5rem;
+  display: flex;
+  font-size: 4rem;
+}
+
 .naviconmeddiabox{
   /* width: 10px;
   height: 10px; */
@@ -201,36 +234,36 @@ li:hover {
 
   .naviconmeddiabox{
     display: flex;
-    width: 11rem;
-    /* width: 16rem; */
+    width: 25%;
     height: 25rem;
-    /* background-color: turquoise; */
+   }
+   .svg-close-nav{
+    fill: #3b2e8c;
+    color: #3b2e8c;
+    padding: 1.8rem ;
+   }
+   .svg-close-nav:checked{
+    display: none;
    }
   ul {
     width: 25%;
-    /* display: flex; */
     flex-direction: column;
     gap: 1rem;
     text-align: left;
     justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
-    /* transform: translate(15%,-15%); */
     right: 0%;
     top: 16%;
     z-index: 2;
     font-weight: 600;
     font-size: 14px;
-    /* background-color: #ededed; */
     padding-left: 6%;
     }
     li{
       width: 100%;
-      /* background-color: yellow; */
-      /* padding: 1%; */
     }
  .nav-btns button ,.nav-btns , .lang-icon {
-    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -240,14 +273,12 @@ li:hover {
     gap: 0.6rem;
     font-size: 12px;
     padding: 0.2rem;
-    /* background-color: violet */
   }
   .nav-btns{
     position: absolute;
     right: 0%;
     top: 40%;
     z-index: 2;
-    /* background-color: rgb(129, 168, 207); */
     width: 25%;
   }
    
