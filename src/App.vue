@@ -29,6 +29,29 @@ export default {
   font-weight: normal;
   font-style: normal;
 } */
+
+:root {
+  --praimaryPlueDarkColor: #3b2e8c;
+  --PlueLightColor: #6c56bd4a;
+  --color1Plue: #5e41ca66;
+  --VerylightPlueColor: #08041f8a;
+  --secondaryDarkPlueColor: #08041f;
+  --color3MedPlue: #150043;
+
+  --lightPupleColor: #ccc5e3;
+  --darkPupleColor: #b88fc6;
+  --clearPurpleColor: #b773ff;
+
+  --darkRedColor: #db665a;
+  --lightRedColor: #db665a4a;
+
+  --color2Gray: #d9d9d900;
+  --lightGrayColor: #ededed;
+  --MedGrayColor: #eaeaeabf;
+  --darkGrayColor: #b3b3b3;
+  --veryDarkGrayText: #454545eb;
+}
+
 * {
   margin: 0;
   padding: 0;
