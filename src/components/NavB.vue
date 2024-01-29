@@ -3,12 +3,30 @@
     <div class="logo">
       <a href="/"><img src="../assets/images/NavBar Logo.png" alt="logo" /></a>
     </div>
+    
+
+    
+
     <div class="nav-list">
-      <ul v-show="isNavOpen" >
+
+      
+      <div v-if="isNavOpen"  >
+      <ul>
+        <router-link to="/"  ><li>Home</li></router-link>
+        <router-link to="/features"  ><li>Features</li></router-link>
+        <router-link to="/packages"  ><li>Packages</li></router-link>
+      </ul>
+
+     
+    </div>
+      <ul v-else  >
         <router-link to="/" @click="closeNav" ><li>Home</li></router-link>
         <router-link to="/features" @click="closeNav" ><li>Features</li></router-link>
         <router-link to="/packages" @click="closeNav" ><li>Packages</li></router-link>
       </ul>
+                 <!-- Mobile layout: Show only in media -->
+   
+
       <router-view />
     </div>
 
@@ -23,7 +41,13 @@
 
       <!-- /////////////////////// -->
 
-    <div class="nav-btns" v-show="isNavOpen">
+       <!-- Mobile navigation buttons -->
+       <div v-if="isNavOpen" class="nav-btns"   >
+        <button><a href="signIn"  >Sign In</a></button>
+        <button><a href="freetrial"  >Free Trial</a></button>
+      </div>
+
+    <div class="nav-btns" v-else  >
       <button @click="closeNav" ><a href="signIn" >Sign In</a></button>
       <button @click="closeNav" ><a href="freetrial">Free Trial</a></button>
 
@@ -89,9 +113,12 @@
     </div>
 
       <div class="naviconmeddiabox" v-if="isNavOpen" @click="closeNav" >
-        <svg  class="svg-close-nav"    @click="closeNav"
+        <svg  class="svg-close-nav"     
           viewPort="0 0 12 12" version="1.1"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+          @click.stop
+          >
+          
          <line x1="1" y1="11" 
           x2="11" y2="1" 
           stroke="#3b2e8c" 
@@ -102,6 +129,11 @@
           stroke-width="2"/>
         </svg>
       </div>
+
+
+  
+
+
 
   </div>
 </template>
@@ -118,7 +150,8 @@ import { ref } from 'vue';
 const isNavOpen = ref(false);
 
 const toggleNav = () => {
-  isNavOpen.value = !isNavOpen.value;
+   isNavOpen.value = !isNavOpen.value;
+
 };
 
 const closeNav = () => {

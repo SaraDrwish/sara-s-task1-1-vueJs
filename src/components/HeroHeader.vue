@@ -854,7 +854,8 @@ p {
   width: 454px;
   height: 85px;
   top: 488px;
-  left: 886px;
+  left: 800px;
+  /* right: 105px; */
   border-radius: 6px;
   /* background-color: rgb(239, 239, 239); */
   background-color: rgb(207, 206, 211);
