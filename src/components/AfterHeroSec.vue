@@ -1,7 +1,7 @@
 <template>
   <div class="AfterHeroSec">
     <div class="w-full">
-      <div class="container flex w-[calc(100%-294px)] m-auto pt-[4rem]">
+      <div class="container flex w-[calc(100%-294px)] m-auto pt-[3rem]">
         <div class="bigBox flex flex-col w-full gap-[45px]">
           <div class="top-smallboxes flex gap-[45px] w-full">
             <div class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2">

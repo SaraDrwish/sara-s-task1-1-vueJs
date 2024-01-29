@@ -3,6 +3,7 @@
     <NavB />
     <HeroHeader />
     <AfterHeroSec />
+    <FeaturesSec />
     <!-- <SignUp /> -->
   </div>
 </template>
@@ -11,6 +12,7 @@
 import NavB from "./components/NavB.vue";
 import HeroHeader from "./components/HeroHeader.vue";
 import AfterHeroSec from "./components/AfterHeroSec.vue";
+import FeaturesSec from "./components/FeaturesSec.vue";
 // import SignUp from "./components/SignUp.vue";
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     NavB,
     HeroHeader,
     AfterHeroSec,
+    FeaturesSec,
     // SignUp,
   },
 };
