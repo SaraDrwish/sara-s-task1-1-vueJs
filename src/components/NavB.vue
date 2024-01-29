@@ -166,6 +166,7 @@ const closeNav = () => {
   /* padding: 16px 105px; */
   background-color: #f3f3f3;
   font-size: 16px;
+  border-bottom: 1px solid #d9d9d933;
 }
 ul {
   display: flex;
@@ -208,12 +209,14 @@ li:hover {
   padding: 12px 22px;
   font-size: 16px;
   border-radius: 6px;
-  /* border: 1px solid #3b2e8c; */
-  color: #3b2e8c;
+  border: 1px solid var(--praimaryPlueDarkColor);
+  color: var(--praimaryPlueDarkColor);
   cursor: pointer;
   transition: all 0.4s ease;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  border: 1px solid #000000;
+  /* box-shadow: 0px 4px 4px 0px #00000040; */
+  /* border: 1px solid #000000; */
+  /* border: none; */
+  border: 1px solid var(--praimaryPlueDarkColor);
 }
 .nav-btns button:nth-child(2) {
   background-color: #3b2e8c;
@@ -221,9 +224,9 @@ li:hover {
 }
 .nav-btns button:hover {
   background-color: #ededed;
-  color: #674fc2;
+  color: var(--praimaryPlueDarkColor);
   /* border: 1px solid #674fc2; */
-  box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 20px;
+  box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 15px;
 }
 .lang-icon {
   display: flex;

@@ -807,6 +807,7 @@ p {
   box-shadow: 0px 4px 4px 0px #00000040;
   border: 1px solid #000000;
 }
+
 .btn-icon-box button:hover {
   box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 20px;
 }
