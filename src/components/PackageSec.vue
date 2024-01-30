@@ -29,17 +29,61 @@
               </div>
               <div class="flex gap-[18px] text-white pb-[25px]">
                 <div
-                  class="flex flex-1 gap-[40px] p-[8px] border rounded-[6px]"
+                  class="flex justify-center items-center w-[55%] gap-[40px] p-[8px] border rounded-[6px]"
                 >
-                  <span class=" ">+</span>
+                  <span class=" ">
+                    <svg
+                      class="cursor-pointer w-[24px] h-[24px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M6 12H18"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 18V6"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
                   <span>One User</span>
-                  <span class=" ">-</span>
+                  <span class=" ">
+                    <svg
+                      class="cursor-pointer w-[24px] h-[24px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M6 12H18"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
                 </div>
-                <div class="flex-1">
-                  <div class="flex gap-[37px] border rounded-[6px] p-[8px]">
+                <div class="w-[40%]">
+                  <div
+                    class="flex gap-[37px] border justify-center items-center rounded-[6px] p-[8px]"
+                  >
                     <span>One Month</span>
                     <span>
                       <svg
+                        class="cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
