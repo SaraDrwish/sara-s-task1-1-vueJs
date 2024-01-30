@@ -8,7 +8,7 @@
       <div v-if="isNavOpen" class="nav-links">
         <ul>
           <router-link to="/"><li>Home</li></router-link>
-          <router-link to="/features"><li>Features</li></router-link>
+          <a href="FeaturesSec"><li>Features</li></a>
           <router-link to="/packages"><li>Packages</li></router-link>
         </ul>
       </div>

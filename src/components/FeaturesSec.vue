@@ -1,13 +1,13 @@
 <template>
-  <div class="FeaturesSec">
+  <div id="FeaturesSec" class="FeaturesSec">
     <div class="container m-auto py-[2rem]">
       <h2 class="font-bold text-[32px] text-left mb-[31px]">Features</h2>
-      <div class="FeaturebigBox flex w-[100%] justify-center items-start
+      <div class="FeaturebigBox flex w-[100%] justify-start items-start
          md:flex-row flex-col  md:flex-wrap
-         bg-orange-500 m-auto  gap[48px] text-left  ">
+         bg-orange-500   gap-[48px] md:gap[48px] text-left  ">
         <!-- ////////////////////// -->
 
-        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[30%] flex flex-col gap-[25px] ">
+        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[28%] flex flex-col gap-[25px] ">
           <div class="SB-Top-Sqr  w-[46px] h-[46px] bg-[#674FC2] flex  ">
             <svg class="  m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M6.37 9.50999C2.29 9.79999 2.3 15.71 6.37 16H16.03C17.2 16.01 18.33 15.57 19.2 14.78C22.06 12.28 20.53 7.27997 16.76 6.79997C15.41 -1.34003 3.62001 1.74999 6.41001 9.50999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,7 +27,7 @@
         </div>
         <!-- ////////////////////// -->
 
-        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[30%] flex flex-col gap-[25px] ">
+        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[28%] flex flex-col gap-[25px] ">
           <div class="SB-Top-Sqr  w-[46px] h-[46px] bg-[#674FC2] flex  ">
             <svg class="  m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M6.37 9.50999C2.29 9.79999 2.3 15.71 6.37 16H16.03C17.2 16.01 18.33 15.57 19.2 14.78C22.06 12.28 20.53 7.27997 16.76 6.79997C15.41 -1.34003 3.62001 1.74999 6.41001 9.50999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -46,7 +46,7 @@
         </div>
         <!-- ////////////////////// -->
 
-        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[30%] flex flex-col gap-[25px] ">
+        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[28%] flex flex-col gap-[25px] ">
           <div class="SB-Top-Sqr  w-[46px] h-[46px] bg-[#674FC2] flex  ">
             <svg class="  m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M6.37 9.50999C2.29 9.79999 2.3 15.71 6.37 16H16.03C17.2 16.01 18.33 15.57 19.2 14.78C22.06 12.28 20.53 7.27997 16.76 6.79997C15.41 -1.34003 3.62001 1.74999 6.41001 9.50999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,7 +64,7 @@
         </div>
         <!-- ////////////////////// -->
 
-        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[30%] flex flex-col gap-[25px] ">
+        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[28%] flex flex-col gap-[25px] ">
           <div class="SB-Top-Sqr  w-[46px] h-[46px] bg-[#674FC2] flex  ">
             <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M20 8.25V18C20 21 18.21 22 16 22H8C5.79 22 4 21 4 18V8.25C4 5 5.79 4.25 8 4.25C8 4.87 8.24997 5.43 8.65997 5.84C9.06997 6.25 9.63 6.5 10.25 6.5H13.75C14.99 6.5 16 5.49 16 4.25C18.21 4.25 20 5 20 8.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,7 +81,7 @@
         </div>
         <!-- ////////////////////// -->
 
-        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[30%] flex flex-col gap-[25px] ">
+        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[28%] flex flex-col gap-[25px] ">
           <div class="SB-Top-Sqr  w-[46px] h-[46px] bg-[#674FC2] flex  ">
             <svg class="  m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M6.37 9.50999C2.29 9.79999 2.3 15.71 6.37 16H16.03C17.2 16.01 18.33 15.57 19.2 14.78C22.06 12.28 20.53 7.27997 16.76 6.79997C15.41 -1.34003 3.62001 1.74999 6.41001 9.50999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -100,7 +100,7 @@
         </div>
         <!-- ////////////////////// -->
 
-        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[30%] flex flex-col gap-[25px] ">
+        <div class="smallBoxes bg-red-500 p-1 m-1 w-[100%]  md:w-[28%] flex flex-col gap-[25px] ">
           <div class="SB-Top-Sqr  w-[46px] h-[46px] bg-[#674FC2] flex  ">
             <svg class="  m-auto " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M6.37 9.50999C2.29 9.79999 2.3 15.71 6.37 16H16.03C17.2 16.01 18.33 15.57 19.2 14.78C22.06 12.28 20.53 7.27997 16.76 6.79997C15.41 -1.34003 3.62001 1.74999 6.41001 9.50999" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
