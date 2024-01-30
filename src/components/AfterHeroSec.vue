@@ -146,6 +146,6 @@
 
 <style scoped>
 .bigBox div {
-  /* width: 33%; */
+  /* width: 33%;*/
 }
 </style>
