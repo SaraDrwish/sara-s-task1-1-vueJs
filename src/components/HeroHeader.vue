@@ -555,6 +555,11 @@
     </div>
 
     <!-- ////// -->
+    <div class="TargServSec">
+      <PackageSec />
+    </div>
+
+    <!-- ////// -->
   </div>
 </template>
 
@@ -562,12 +567,14 @@
 import AfterHeroSec from "./AfterHeroSec.vue";
 import FeaturesSec from "./FeaturesSec.vue";
 import TargServ from "./TargServ.vue";
+import PackageSec from "./PackageSec.vue";
 export default {
   // name:HeroHeader,
   components: {
     AfterHeroSec,
     FeaturesSec,
     TargServ,
+    PackageSec,
   },
 };
 </script>

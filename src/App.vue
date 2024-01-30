@@ -2,6 +2,7 @@
   <div class="appClassGeneral">
     <NavB />
     <HeroHeader />
+    <FooterB />
     <!-- <AfterHeroSec /> -->
     <!-- <FeaturesSec /> -->
     <!-- <SignUp /> -->
@@ -11,6 +12,7 @@
 <script>
 import NavB from "./components/NavB.vue";
 import HeroHeader from "./components/HeroHeader.vue";
+import FooterB from "./components/FooterB.vue";
 // import AfterHeroSec from "./components/AfterHeroSec.vue";
 // import FeaturesSec from "./components/FeaturesSec.vue";
 // import SignUp from "./components/SignUp.vue";
@@ -19,6 +21,7 @@ export default {
   components: {
     NavB,
     HeroHeader,
+    FooterB,
     // AfterHeroSec,
     // FeaturesSec,
     // SignUp,
@@ -87,7 +90,7 @@ svg {
 }
 .appClassGeneral {
   font-family: Gotham;
-  height: 4473px;
+  /* height: 4473px; */
   opacity: 0.94;
   background: linear-gradient(
       rgba(255, 255, 255, 0.6),
