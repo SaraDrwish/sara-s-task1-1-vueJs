@@ -1,16 +1,18 @@
 <template>
   <div class="Package">
     <div class="container py-[2rem] mb-[120px]">
-      <div class="flex flex-col md:gap-[75px] gap-8 p-1 bg-pink-500">
+      <div
+        class="flex flex-col md:gap-[75px] w-full h-full justify-start gap-8 p-1 bg-pink-500"
+      >
         <h2 class="text-[32px] font-[700] w-[90%] md:w-[40%]">
           Choose the appropriate package, and enjoy your Free Trial !
         </h2>
 
         <div
-          class="flex md:flex-row flex-col justify-center items-center bg-orange-500 md:gap-[69px] gap-10"
+          class="flex md:flex-row flex-col justify-start items-start h-full md:gap-[69px] gap-10"
         >
           <div
-            class="flex flex-col gap-[4px] flex-1 bg-[#3B2E8C] w-full px-[49px] py-[45px] rounded-[33px]"
+            class="flex flex-col gap-[4px] flex-1 h-full bg-[#3B2E8C] w-full px-[49px] py-[45px] rounded-[33px]"
           >
             <div class="p-[20px]">
               <h2 class="text-[24px] text-white">Basic</h2>
@@ -25,9 +27,37 @@
                   <span class=" "> / Monthly </span>
                 </div>
               </div>
-              <div class="flex">
-                <div class="flex-1"></div>
-                <div class="flex-1"></div>
+              <div class="flex gap-[18px] text-white bg-red-500 py-[25px]">
+                <div
+                  class="flex flex-1 bg-green-600 gap-[40px] p-[8px] border rounded-[6px]"
+                >
+                  <span class=" ">+</span>
+                  <span>One User</span>
+                  <span class=" ">-</span>
+                </div>
+                <div class="flex-1">
+                  <div class="flex gap-[37px] border rounded-[6px] p-[8px]">
+                    <span>One Month</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M19.92 8.95001L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.08 8.95001"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
               </div>
               <button
                 class="flex w-[100%] m-auto text-[16px] font-bold items-center p-[8px] justify-center rounded-[6px] bg-white text-[#3B2E8C]"
@@ -43,11 +73,11 @@
               <h2 class="text-[22px] mb-[41px]">Package Features</h2>
             </div>
             <ul
-              class="flex flex-col p-1 justify-between items-center w-[100%] gap-[21px] text-[18px] bg-green-700"
+              class="flex flex-col p-1 justify-between items-center w-[100%] gap-[21px] text-[18px]"
             >
               <li class="flex gap-[25%] justify-between items-center w-[100%]">
                 <div class="w-[100%]">Contact & Manage companies</div>
-                <div class="placeholder-purple-400">
+                <div class=" ">
                   <svg
                     class="w-[24px] h-[24px]"
                     viewBox="0 0 24 24"
@@ -81,9 +111,7 @@
                   </svg>
                 </div>
               </li>
-              <li
-                class="flex gap-[25%] justify-between items-center bg-yellow-300 w-[100%]"
-              >
+              <li class="flex gap-[25%] justify-between items-center w-[100%]">
                 <div class="">Manage Sales Pipeline</div>
                 <div class="">
                   <svg
@@ -120,9 +148,7 @@
                 </div>
               </li>
 
-              <li
-                class="flex gap-[25%] justify-between items-center bg-yellow-300 w-[100%]"
-              >
+              <li class="flex gap-[25%] justify-between items-center w-[100%]">
                 <div class="">Manage Tasks</div>
                 <div class="">
                   <svg
@@ -159,9 +185,7 @@
                 </div>
               </li>
 
-              <li
-                class="flex gap-[25%] justify-between items-center bg-yellow-300 w-[100%]"
-              >
+              <li class="flex gap-[25%] justify-between items-center w-[100%]">
                 <div class="">Track Sales Activities</div>
                 <div class="">
                   <svg
@@ -198,9 +222,7 @@
                 </div>
               </li>
 
-              <li
-                class="flex gap-[25%] justify-between items-center bg-yellow-300 w-[100%]"
-              >
+              <li class="flex gap-[25%] justify-between items-center w-[100%]">
                 <div class="">Manage Projects</div>
                 <div class="">
                   <svg
@@ -237,9 +259,7 @@
                 </div>
               </li>
 
-              <li
-                class="flex gap-[25%] justify-between items-center bg-yellow-300 w-[100%]"
-              >
+              <li class="flex gap-[25%] justify-between items-center w-[100%]">
                 <div class="">Analyze & Manage Reports</div>
                 <div class="">
                   <svg
