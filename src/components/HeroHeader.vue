@@ -541,24 +541,33 @@
 
       <!-- //////////////////end -->
     </div>
+    <!-- ////// -->
     <div class="AfterHeroSec-InHero">
       <AfterHeroSec />
     </div>
-
+    <!-- /////// -->
     <div class="FeaturesSec-InHero">
       <FeaturesSec />
     </div>
+    <!-- ////// -->
+    <div class="TargServSec">
+      <TargServ />
+    </div>
+
+    <!-- ////// -->
   </div>
 </template>
 
 <script>
 import AfterHeroSec from "./AfterHeroSec.vue";
 import FeaturesSec from "./FeaturesSec.vue";
+import TargServ from "./TargServ.vue";
 export default {
   // name:HeroHeader,
   components: {
     AfterHeroSec,
     FeaturesSec,
+    TargServ,
   },
 };
 </script>
