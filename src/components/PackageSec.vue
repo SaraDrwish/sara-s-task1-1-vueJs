@@ -31,7 +31,9 @@
                 <div
                   class="flex justify-center items-center w-[55%] gap-[40px] p-[8px] border rounded-[6px]"
                 >
-                  <span class=" ">
+                  <span
+                    class="border-r-2 pr-4 h-[150%] flex justify-center items-center overflow-hidden"
+                  >
                     <svg
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +58,10 @@
                       />
                     </svg>
                   </span>
-                  <span>One User</span>
-                  <span class=" ">
+                  <span class=" ">One User</span>
+                  <span
+                    class="border-l-2 pl-4 h-[150%] overflow-hidden flex justify-center items-center"
+                  >
                     <svg
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
