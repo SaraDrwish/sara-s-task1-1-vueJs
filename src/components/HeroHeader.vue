@@ -1007,18 +1007,20 @@ p {
   .btn-icon-box button {
     gap: 30px;
     padding-right: 40px;
-    margin: 20px auto;
+    margin: 19px auto 50px auto;
     width: 230px;
-    height: 50px;
+    height: 45px;
     font-size: 1rem;
   }
 
   .right-btm-box-added {
     /* top: 0; */
-    top: 1rem;
-    left: 8%;
+    /* top: 1rem; */
+    top: -0.7rem;
+    left: 1%;
     width: 80%;
-    font-size: 0.8rem;
+    margin: auto;
+    /* font-size: 0.8rem; */
     position: relative;
   }
   .added-box-imeges,

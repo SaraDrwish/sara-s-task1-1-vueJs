@@ -340,7 +340,8 @@ li:hover {
   }
   .nav-btns {
     right: 25%;
-    top: 40%;
+    /* top: 40%; */
+    top: 50%;
     width: 25%;
 
     position: absolute;
