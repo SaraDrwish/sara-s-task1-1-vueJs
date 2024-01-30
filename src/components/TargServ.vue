@@ -1,38 +1,38 @@
 <template>
-  <div class="TargServ my-[4rem]">
+  <div class="TargServ md:my-[4rem] my-[1rem]">
     <div class="container">
       <div class="flex md:flex-row flex-col">
         <div
-          class="left-targServ md:w-[20%] w-full m-auto text-center text-[32px] font-[700] justify-center items-center"
+          class="left-targServ md:w-[20%] w-full m-auto text-center md:text-[32px] text-[22px] font-[700] justify-center items-center"
         >
           <h1>Target Sectors & Service Providers</h1>
         </div>
         <div
-          class="right-targServ flex gap-[25px] flex-col w-[66%] m-auto bg-blue-400"
+          class="right-targServ flex gap-[25px] flex-col md:w-[66%] w-full m-auto"
         >
           <!-- //// -->
-          <div class="flex justify-start items-center bg-slate-500 p-2">
+          <div class="flex justify-start items-center">
             <div
-              class="flex justify-center items-center w-[50%] bg-red-400 m-auto cursor-pointer text-[20px] font-[700]"
+              class="flex justify-center items-center md:pb-[60px] pb-[11px] md:w-[50%] w-[90%] m-auto cursor-pointer md:text-[20px] text-[12px] font-[700]"
             >
               <h2
-                class="w-[50%] text-[#B3B3B3] p-2 border-b-4 border-[#B3B3B3]"
+                class="md:w-[50%] w-full text-[#B3B3B3] p-2 border-b-4 border-[#B3B3B3]"
               >
                 Service Providers
               </h2>
               <h2
-                class="w-[50%] text-[#3B2E8C] p-2 border-b-4 border-[#3B2E8C]"
+                class="md:w-[50%] w-full text-[#3B2E8C] p-2 border-b-4 border-[#3B2E8C]"
               >
                 Target Sectors
               </h2>
             </div>
           </div>
-          <!-- ////// -->
+          <!-- /////////start targer selects/////// -->
           <div
-            class="flex w-[90%] m-auto gap-[27px] justify-center items-center p-1"
+            class="flex w-[90%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-center items-center p-1"
           >
             <div
-              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] w-[24%] bg-[#EAEAEABF] rounded-[11px]"
+              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
             >
               <p>Software</p>
               <div
@@ -90,7 +90,7 @@
             </div>
             <!-- ////////// -->
             <div
-              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] w-[24%] bg-[#EAEAEABF] rounded-[11px]"
+              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
             >
               <div
                 class="tragServ-icon-box flex items-center justify-center bg-white rounded-[15px]"
@@ -172,7 +172,7 @@
             <!-- ///////// -->
 
             <div
-              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] w-[24%] bg-[#EAEAEABF] rounded-[11px]"
+              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
             >
               <div
                 class="tragServ-icon-box flex items-center justify-center bg-white rounded-[15px]"
@@ -251,10 +251,10 @@
           <!-- ////////////////////////////// -->
 
           <div
-            class="flex w-[90%] m-auto gap-[27px] justify-start items-center p-1"
+            class="flex w-[90%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-start items-center p-1"
           >
             <div
-              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] w-[24%] bg-[#EAEAEABF] rounded-[11px]"
+              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
             >
               <div
                 class="tragServ-icon-box flex items-center justify-center bg-white rounded-[15px]"
@@ -322,7 +322,7 @@
             </div>
             <!-- ////////// -->
             <div
-              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] w-[24%] bg-[#EAEAEABF] rounded-[11px]"
+              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
             >
               <div
                 class="tragServ-icon-box flex items-center justify-center bg-white rounded-[15px]"
@@ -384,13 +384,13 @@
             <!-- ///////// -->
 
             <div
-              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] w-[24%] bg-[#EAEAEABF] rounded-[11px]"
+              class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
             >
               <div
                 class="tragServ-icon-box flex items-center justify-center bg-white rounded-[15px]"
               >
                 <svg
-                  class="w-[24px] h-[24px]"
+                  class="md:w-[24px] md:h-[24px] w-[2rem] h-[2rem]"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -498,5 +498,28 @@
   box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.13);
   width: 47px;
   height: 46px;
+}
+p {
+  color: #454545;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.7px;
+}
+
+@media (max-width: 1300px) {
+  p {
+    font-size: 8px;
+  }
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .tragServ-icon-box {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 </style>
