@@ -3,12 +3,12 @@
     <div class="container m-auto py-[2rem]">
       <h2 class="font-bold text-[32px] text-left mb-[31px]">Features</h2>
       <div
-        class="FeaturebigBox flex w-[100%] justify-start items-start md:flex-row flex-col md:flex-wrap bg-orange-500 gap-[48px] md:gap[48px] text-left"
+        class="FeaturebigBox flex w-[100%] justify-start items-start md:flex-row flex-col md:flex-wrap gap-[48px] md:gap[48px] text-left"
       >
         <!-- ////////////////////// -->
 
         <div
-          class="smallBoxes bg-red-500 p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
+          class="smallBoxes p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
         >
           <div class="SB-Top-Sqr w-[46px] h-[46px] bg-[#674FC2] flex">
             <svg
@@ -75,7 +75,7 @@
         <!-- ////////////////////// -->
 
         <div
-          class="smallBoxes bg-red-500 p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
+          class="smallBoxes p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
         >
           <div class="SB-Top-Sqr w-[46px] h-[46px] bg-[#674FC2] flex">
             <svg
@@ -141,7 +141,7 @@
         <!-- ////////////////////// -->
 
         <div
-          class="smallBoxes bg-red-500 p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
+          class="smallBoxes p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
         >
           <div class="SB-Top-Sqr w-[46px] h-[46px] bg-[#674FC2] flex">
             <svg
@@ -207,7 +207,7 @@
         <!-- ////////////////////// -->
 
         <div
-          class="smallBoxes bg-red-500 p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
+          class="smallBoxes p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
         >
           <div class="SB-Top-Sqr w-[46px] h-[46px] bg-[#674FC2] flex">
             <svg
@@ -261,7 +261,7 @@
         <!-- ////////////////////// -->
 
         <div
-          class="smallBoxes bg-red-500 p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
+          class="smallBoxes p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
         >
           <div class="SB-Top-Sqr w-[46px] h-[46px] bg-[#674FC2] flex">
             <svg
@@ -328,7 +328,7 @@
         <!-- ////////////////////// -->
 
         <div
-          class="smallBoxes bg-red-500 p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
+          class="smallBoxes p-1 m-1 w-[100%] md:w-[28%] flex flex-col gap-[25px]"
         >
           <div class="SB-Top-Sqr w-[46px] h-[46px] bg-[#674FC2] flex">
             <svg
@@ -412,7 +412,7 @@
   border: 1px solid rgba(237, 237, 237, 0.42);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.02);
   backdrop-filter: blur(3.200000047683716px);
-  padding: 34px 30px 75px 20px;
+  padding: 34px 30px 34px 20px;
   /* width: 364px; */
   height: 321px;
 }

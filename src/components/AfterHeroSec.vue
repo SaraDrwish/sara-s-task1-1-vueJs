@@ -3,7 +3,9 @@
     <div class="w-full">
       <div class="container m-auto flex py-[4rem]">
         <div class="bigBox flex flex-col w-full gap-[45px]">
-          <div class="top-smallboxes flex gap-[45px] w-full">
+          <div
+            class="top-smallboxes flex w-full md:flex-row flex-col gap-[45px] md:gap[45px]"
+          >
             <div class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2">
               <div class="w-[20%] relative">
                 <span
@@ -71,7 +73,7 @@
               </div>
             </div>
           </div>
-          <div class="btm-smallboxes flex gap-[45px] w-full">
+          <div class="btm-smallboxes flex w-full md:flex-row flex-col">
             <div class="flex gap-[8px] w-[100%] text-[#6C56BD4A] p-2">
               <div class="w-[20%] relative">
                 <span
@@ -145,7 +147,13 @@
 <script setup></script>
 
 <style scoped>
-.bigBox div {
-  /* width: 33%;*/
+.AfterHeroSec {
+  overflow: hidden;
+}
+
+@media (max-width: 1300px) {
+  .bigBox div {
+    width: 100%;
+  }
 }
 </style>
