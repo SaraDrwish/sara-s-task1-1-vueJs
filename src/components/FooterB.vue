@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer overflow-hidden">
     <div
       class="flex flex-col m-auto text-center w-full justify-center items-center gap-[1rem] pt-[48px] text-white bg-[#3B2E8C]"
     >
@@ -229,5 +229,13 @@
 .social-icons svg {
   width: 16px;
   height: 15px;
+}
+
+@media (max-width: 1300px) {
+  .footer-btm-shap,
+  .footer-btm-shap-left,
+  .footer-btm-shap-right {
+    display: none;
+  }
 }
 </style>
