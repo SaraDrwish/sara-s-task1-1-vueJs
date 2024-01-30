@@ -75,8 +75,12 @@
         <p>+966 56 894 2437</p>
         <p>info@connectin.com</p>
       </div>
-      <div class="social-icons pb-[19px]">
-        <ul class="flex gap-[23px]">
+      <!-- <div class="social-icons relative w-[100%]"> -->
+      <div class="social-icons relative w-[100%] pb-[19px]">
+        <div
+          class="footer-btm-shap-left flex-1 p-1 ml-auto absolute left-0"
+        ></div>
+        <ul class="flex gap-[23px] justify-center items-center m-auto">
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -168,15 +172,19 @@
             </svg>
           </li>
         </ul>
-      </div>
-      <div class="footer-btm-shap bg-[#3B2E8C] flex w-[100%] relative">
-        <div
-          class="footer-btm-shap-left flex-1 p-1 ml-auto absolute left-0"
-        ></div>
         <div
           class="footer-btm-shap-right flex-1 mr-auto absolute right-0"
         ></div>
       </div>
+      <!-- <div class="footer-btm-shap bg-[#3B2E8C] flex w-[100%] relative">
+        <div
+          class="footer-btm-shap-left flex-1 p-1 ml-auto absolute left-0"
+        ></div>
+
+        <div
+          class="footer-btm-shap-right flex-1 mr-auto absolute right-0"
+        ></div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -186,9 +194,10 @@
 <style scoped>
 .footer-btm-shap {
   background: #3b2e8c;
-  /* width: 587px;
+  /* width: 587px; */
+  width: 100%;
   height: 52px;
-  border-radius: 0px 100px 0px 0px; */
+  /* border-radius: 0px 100px 0px 0px; */
   width: 100%;
   /* position: absolute; */
 }
@@ -198,21 +207,25 @@
   background: #150043;
   width: 587px;
   height: 52px;
+  right: 0;
+  bottom: 0;
 }
 .footer-btm-shap-left {
   border-radius: 0px 100px 0px 0px;
   background: #150043;
   width: 587px;
   height: 52px;
+  left: 0;
+  bottom: 0;
 }
-.footer-btm-shap:nth-child(1) {
+/* .footer-btm-shap:nth-child(1) {
   right: 0;
   bottom: 0;
 }
 .footer-btm-shap:nth-child(2) {
   left: 0;
   bottom: 0;
-}
+} */
 .social-icons svg {
   width: 16px;
   height: 15px;
