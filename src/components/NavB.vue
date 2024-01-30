@@ -254,7 +254,7 @@ li:hover {
 }
 
 /* /////////////////start media //////////////////////// */
-@media (max-width: 769px) {
+@media (max-width: 992px) {
   .NavB {
     /* width: 100%; */
     font-size: 0.8rem;

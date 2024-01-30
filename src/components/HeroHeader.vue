@@ -899,9 +899,23 @@ p {
   font-weight: 400;
 }
 
-/* ///////////////////////////////Start media //////////////////////// */
+/* ///////////////////////////////////////////Start media ///////////////////////////////////////////// */
 
-@media (max-width: 769px) {
+@media (max-width: 1440px) and (max-width:1550px)   {
+  .right-btm-box-added {
+    top: 444px;
+    right: 46px;
+}
+.svg-cricl-smal-left-7-7 {
+    left: 48px;
+}
+
+}
+
+
+@media (max-width: 1300px)   {
+/* @media (max-width: 1280px)   { */
+/* @media (max-width: 769px)   { */
   body {
     width: 100%;
     height: 100%;
