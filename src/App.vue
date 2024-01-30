@@ -2,8 +2,8 @@
   <div class="appClassGeneral">
     <NavB />
     <HeroHeader />
-    <AfterHeroSec />
-    <FeaturesSec />
+    <!-- <AfterHeroSec /> -->
+    <!-- <FeaturesSec /> -->
     <!-- <SignUp /> -->
   </div>
 </template>
@@ -11,16 +11,16 @@
 <script>
 import NavB from "./components/NavB.vue";
 import HeroHeader from "./components/HeroHeader.vue";
-import AfterHeroSec from "./components/AfterHeroSec.vue";
-import FeaturesSec from "./components/FeaturesSec.vue";
+// import AfterHeroSec from "./components/AfterHeroSec.vue";
+// import FeaturesSec from "./components/FeaturesSec.vue";
 // import SignUp from "./components/SignUp.vue";
 export default {
   name: "App",
   components: {
     NavB,
     HeroHeader,
-    AfterHeroSec,
-    FeaturesSec,
+    // AfterHeroSec,
+    // FeaturesSec,
     // SignUp,
   },
 };
