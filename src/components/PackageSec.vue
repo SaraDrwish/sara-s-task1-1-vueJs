@@ -2,7 +2,7 @@
   <div class="Package">
     <div class="container py-[2rem] mb-[120px]">
       <div
-        class="flex flex-col md:gap-[75px] w-full h-full justify-start gap-8 p-1 bg-pink-500"
+        class="flex flex-col md:gap-[75px] w-full h-full justify-start gap-8 p-1"
       >
         <h2 class="text-[32px] font-[700] w-[90%] md:w-[40%]">
           Choose the appropriate package, and enjoy your Free Trial !
@@ -14,7 +14,7 @@
           <div
             class="flex flex-col gap-[4px] flex-1 h-full bg-[#3B2E8C] w-full px-[49px] py-[45px] rounded-[33px]"
           >
-            <div class="p-[20px]">
+            <div class="pb-[20px]">
               <h2 class="text-[24px] text-white">Basic</h2>
               <p class="text-[#ffffffc9] text-[16px] pt-[24px]">
                 We provide you & your team a comprehensive dashboard that help
@@ -27,9 +27,9 @@
                   <span class=" "> / Monthly </span>
                 </div>
               </div>
-              <div class="flex gap-[18px] text-white bg-red-500 py-[25px]">
+              <div class="flex gap-[18px] text-white pb-[25px]">
                 <div
-                  class="flex flex-1 bg-green-600 gap-[40px] p-[8px] border rounded-[6px]"
+                  class="flex flex-1 gap-[40px] p-[8px] border rounded-[6px]"
                 >
                   <span class=" ">+</span>
                   <span>One User</span>
