@@ -30,15 +30,15 @@
             </div>
           </div>
 
-          <div class="bg-yellow-200 p-1">
+          <div class="   ">
             <!-- strt cont 1  -->
             <div
               v-show="selectedSection === 'targetSectors'"
-              class="bg-green-500"
+              class="flex flex-col gap-[25px] "
             >
               <!-- /////////start targer selects/////// -->
               <div
-                class="flex w-[90%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-center items-center p-1"
+                class="flex w-[100%] text-red-500 m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-center items-center p-1"
               >
                 <div
                   class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
@@ -260,7 +260,7 @@
               <!-- ////////////////////////////// -->
 
               <div
-                class="flex w-[90%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-start items-center p-1"
+                class="flex w-[100%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-start items-center p-1"
               >
                 <div
                   class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
@@ -497,16 +497,16 @@
             <!-- strt cont 2  -->
             <div
               v-show="selectedSection === 'serviceProviders'"
-              class="bg-pink-300 p-1"
+              class=" flex flex-col gap-[25px]"
             >
               <!-- /////////start targer selects/////// -->
               <div
-                class="flex w-[90%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-center items-center p-1"
+                class="flex w-[100%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-center items-center p-1"
               >
                 <div
                   class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
                 >
-                  <p>Software</p>
+                  
                   <div
                     class="tragServ-icon-box flex items-center justify-center bg-white rounded-[15px]"
                   >
@@ -559,6 +559,7 @@
                       </g>
                     </svg>
                   </div>
+                  <p>Startups</p>
                 </div>
                 <!-- ////////// -->
                 <div
@@ -638,7 +639,7 @@
                       </g>
                     </svg>
                   </div>
-                  <p>Real Estate</p>
+                  <p>Lowyers</p>
                 </div>
 
                 <!-- ///////// -->
@@ -715,7 +716,7 @@
                       </g>
                     </svg>
                   </div>
-                  <p>Healthcare</p>
+                  <p>Constituents</p>
                 </div>
 
                 <!-- ///////// -->
@@ -723,7 +724,7 @@
               <!-- ////////////////////////////// -->
 
               <div
-                class="flex w-[90%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-start items-center p-1"
+                class="flex w-[100%] m-auto md:gap-[27px] md:flex-row flex-col gap-[11px] justify-start items-center p-1"
               >
                 <div
                   class="flex gap-[15px] items-center justify-center py-[7px] px-[11px] md:w-[24%] w-[90%] bg-[#EAEAEABF] rounded-[11px]"
@@ -790,7 +791,7 @@
                       </g>
                     </svg>
                   </div>
-                  <p>Shipping</p>
+                  <p>Ecommers</p>
                 </div>
                 <!-- ////////// -->
                 <div
@@ -850,7 +851,7 @@
                       </g>
                     </svg>
                   </div>
-                  <p>Education</p>
+                  <p>BusinessMen</p>
                 </div>
 
                 <!-- ///////// -->
@@ -950,7 +951,7 @@
                       </g>
                     </svg>
                   </div>
-                  <p>Entertainment</p>
+                  <p>Investors</p>
                 </div>
 
                 <!-- ///////// -->
