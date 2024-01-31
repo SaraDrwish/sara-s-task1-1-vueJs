@@ -118,7 +118,7 @@
             class="flex flex-col gap-[4px] flex-1 text-[#303030] rounded-[33px] px-[49px] py-[45px] bg-[#EDEDED]"
           >
             <div class="">
-              <h2 class="text-[22px] mb-[41px]">Package Features</h2>
+              <h2 class="text-[22px] mb-[41px] font-[700]">Package Features</h2>
             </div>
             <ul
               class="flex flex-col p-1 justify-between items-center w-[100%] gap-[21px] text-[18px]"
@@ -356,5 +356,13 @@
 <style scoped>
 span {
   /* color: #ffffffb8; */
+}
+button {
+  transition: all 0.4s ease;
+}
+button:hover {
+  background-color: #ededed;
+  color: var(--praimaryPlueDarkColor);
+  box-shadow: #3b2e8c50 0px 9px 15px, #3b2e8c50 0px -9px 15px;
 }
 </style>
