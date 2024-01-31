@@ -4,15 +4,15 @@
       <div
         class="flex flex-col md:gap-[75px] w-full h-full justify-start gap-8 p-1"
       >
-        <h2 class="text-[32px] font-[700] w-[90%] md:w-[40%]">
+        <h2 class="md:text-[32px] text-[22px] font-[700] w-[90%] md:w-[40%]">
           Choose the appropriate package, and enjoy your Free Trial !
         </h2>
 
         <div
-          class="flex md:flex-row flex-col justify-start items-start h-full md:gap-[69px] gap-10"
+          class="flex md:flex-row flex-col justify-start items-start w-[100%] h-[100%] md:h-[445px] md:gap-[69px] gap-10"
         >
           <div
-            class="flex flex-col gap-[4px] flex-1 h-full bg-[#3B2E8C] w-full px-[49px] py-[45px] rounded-[33px]"
+            class="flex flex-col gap-[4px] flex-1 md:w-[50%] w-[100%] h-full bg-[#3B2E8C] w-full px-[49px] py-[45px] rounded-[33px]"
           >
             <div class="pb-[20px]">
               <h2 class="text-[24px] text-white">Basic</h2>
@@ -20,19 +20,19 @@
                 We provide you & your team a comprehensive dashboard that help
                 you manage and track your clients
               </p>
-              <div class="flex gap-[10px] items-center mt-[13px] mb-[34px]">
+              <div class="flex gap-[10px] items-center mt-[13px]  mb-[34px]">
                 <p class="text-[46px] text-white">25</p>
                 <div class="text-[16px] text-[#ffffffb8]">
                   <span class=" "> SAR </span>
                   <span class=" "> / Monthly </span>
                 </div>
               </div>
-              <div class="flex gap-[18px] text-white pb-[25px]">
+              <div class="flex gap-[18px] text-white pb-[25px] md:flex-row flex-col  justify-center items-center overflow-hidden">
                 <div
-                  class="flex justify-center items-center w-[55%] gap-[40px] p-[8px] border rounded-[6px]"
+                  class="flex justify-center items-center md:w-[55%] w-[100%] gap-[40px]   overflow-hidden p-[8px] border rounded-[6px]"
                 >
                   <span
-                    class="border-r-2 pr-4 h-[150%] flex justify-center items-center overflow-hidden"
+                    class="border-r-2 pr-4 h-[150%] flex justify-center items-center  overflow-hidden"
                   >
                     <svg
                       class="cursor-pointer w-[24px] h-[24px]"
@@ -80,9 +80,11 @@
                     </svg>
                   </span>
                 </div>
-                <div class="w-[40%]">
+                <div class="md:w-[40%] w-[100%] justify-center   
+                     items-center md:flex-row flex-col">
                   <div
-                    class="flex gap-[37px] border justify-center items-center rounded-[6px] p-[8px]"
+                    class="flex gap-[37px] border justify-center   
+                     items-center rounded-[6px] p-[8px]"
                   >
                     <span>One Month</span>
                     <span>
@@ -115,7 +117,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col gap-[4px] flex-1 text-[#303030] rounded-[33px] px-[49px] py-[45px] bg-[#EDEDED]"
+            class="flex flex-col gap-[4px] flex-1 md:w-[50%] w-[100%] h-full text-[#303030] rounded-[33px] px-[49px] py-[45px] bg-[#EDEDED]"
           >
             <div class="">
               <h2 class="text-[22px] mb-[41px] font-[700]">Package Features</h2>
