@@ -21,7 +21,7 @@
                 you manage and track your clients
               </p>
               <div class="flex gap-[10px] items-center mt-[13px]  mb-[34px]">
-                <p class="text-[46px] text-white">25</p>
+                <p class="text-[46px] text-white">25 {{ counter }}</p>  
                 <div class="text-[16px] text-[#ffffffb8]">
                   <span class=" "> SAR </span>
                   <span class=" "> / Monthly </span>
@@ -31,10 +31,11 @@
                 <div
                   class="flex justify-center items-center md:w-[55%] w-[100%] gap-[40px]   overflow-hidden p-[8px] border rounded-[6px]"
                 >
-                  <span
+                  <span     @click="incrementCounter"   
+
                     class="border-r-2 pr-4 h-[150%] flex justify-center items-center  overflow-hidden"
                   >
-                    <svg
+                    <svg 
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -59,7 +60,7 @@
                     </svg>
                   </span>
                   <span class=" ">One User</span>
-                  <span
+                  <span  @click="decrementCounter"
                     class="border-l-2 pl-4 h-[150%] overflow-hidden flex justify-center items-center"
                   >
                     <svg
@@ -353,7 +354,21 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const counter = ref(25);
+
+const incrementCounter = () => {
+  if (counter.value < 100) {
+    counter.value += 5;
+  }
+};
+
+const decrementCounter = () => {
+  if (counter.value > 0) {
+    counter.value -= 5;
+  }
+};
+</script>
 
 <style scoped>
 span {
