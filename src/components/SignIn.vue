@@ -1,7 +1,9 @@
 <template>
-  <div class="templateSignin">
-    <h1>Sign In</h1>
-    <div class="SignIn">
+  <div id="signin" class="templateSignin flex flex-col w-[100%]">
+    <h1 class="text-2xl font-bold">Sign In</h1>
+    <div
+      class="SignIn flex flex-col w-[100%] justify-center items-center m-auto"
+    >
       <form>
         <label for="name"> User Name : </label>
         <input type="text" placeholder="name" />
@@ -11,19 +13,18 @@
       </form>
     </div>
   </div>
-  <router-view />
 </template>
 
 <script>
-export default {
-  name: "SignIn",
-};
+// export default {
+//   name: "HeroHeader",
+// };
 </script>
 
 <style scoped>
 .templateSignin {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 .SignUp {
   display: flex;

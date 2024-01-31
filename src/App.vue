@@ -1,33 +1,31 @@
 <template>
   <div class="appClassGeneral">
     <NavB />
-    <HeroHeader />
+    <div>
+      <router-view />
+      <HeroHeader v-if="showHeroHeader" />
+    </div>
     <FooterB />
-    <!-- <AfterHeroSec /> -->
-    <!-- <FeaturesSec /> -->
-    <!-- <SignUp /> -->
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, watchEffect } from "vue";
+import { useRoute } from "vue-router";
+
 import NavB from "./components/NavB.vue";
 import HeroHeader from "./components/HeroHeader.vue";
 import FooterB from "./components/FooterB.vue";
-// import AfterHeroSec from "./components/AfterHeroSec.vue";
-// import FeaturesSec from "./components/FeaturesSec.vue";
-// import SignUp from "./components/SignUp.vue";
-export default {
-  name: "App",
-  components: {
-    NavB,
-    HeroHeader,
-    FooterB,
-    // AfterHeroSec,
-    // FeaturesSec,
-    // SignUp,
-  },
-};
+
+const showHeroHeader = ref(true);
+const route = useRoute();
+
+watchEffect(() => {
+  showHeroHeader.value = route.name !== "SignIn";
+});
 </script>
+
+<!-- ///// -->
 
 <style>
 @import url("https://fonts.cdnfonts.com/css/gotham-9");

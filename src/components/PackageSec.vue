@@ -20,22 +20,24 @@
                 We provide you & your team a comprehensive dashboard that help
                 you manage and track your clients
               </p>
-              <div class="flex gap-[10px] items-center mt-[13px]  mb-[34px]">
-                <p class="text-[46px] text-white">25 {{ counter }}</p>  
+              <div class="flex gap-[10px] items-center mt-[13px] mb-[34px]">
+                <p class="text-[46px] text-white">{{ counter }}</p>
                 <div class="text-[16px] text-[#ffffffb8]">
                   <span class=" "> SAR </span>
                   <span class=" "> / Monthly </span>
                 </div>
               </div>
-              <div class="flex gap-[18px] text-white pb-[25px] md:flex-row flex-col  justify-center items-center overflow-hidden">
+              <div
+                class="flex gap-[18px] text-white pb-[25px] md:flex-row flex-col justify-center items-center overflow-hidden"
+              >
                 <div
-                  class="flex justify-center items-center md:w-[55%] w-[100%] gap-[40px]   overflow-hidden p-[8px] border rounded-[6px]"
+                  class="flex justify-center items-center md:w-[55%] w-[100%] gap-[40px] overflow-hidden p-[8px] border rounded-[6px]"
                 >
-                  <span     @click="incrementCounter"   
-
-                    class="border-r-2 pr-4 h-[150%] flex justify-center items-center  overflow-hidden"
+                  <span
+                    class="border-r-2 pr-4 h-[150%] flex justify-center items-center overflow-hidden"
                   >
-                    <svg 
+                    <svg
+                      @click="incrementCounter"
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -60,10 +62,11 @@
                     </svg>
                   </span>
                   <span class=" ">One User</span>
-                  <span  @click="decrementCounter"
+                  <span
                     class="border-l-2 pl-4 h-[150%] overflow-hidden flex justify-center items-center"
                   >
                     <svg
+                      @click="decrementCounter"
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -81,11 +84,11 @@
                     </svg>
                   </span>
                 </div>
-                <div class="md:w-[40%] w-[100%] justify-center   
-                     items-center md:flex-row flex-col">
+                <div
+                  class="md:w-[40%] w-[100%] justify-center items-center md:flex-row flex-col"
+                >
                   <div
-                    class="flex gap-[37px] border justify-center   
-                     items-center rounded-[6px] p-[8px]"
+                    class="flex gap-[37px] border justify-center items-center rounded-[6px] p-[8px]"
                   >
                     <span>One Month</span>
                     <span>
@@ -355,17 +358,19 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
 const counter = ref(25);
 
 const incrementCounter = () => {
-  if (counter.value < 100) {
-    counter.value += 5;
+  if (counter.value < 400) {
+    counter.value += 100;
   }
 };
 
 const decrementCounter = () => {
-  if (counter.value > 0) {
-    counter.value -= 5;
+  if (counter.value > 25) {
+    counter.value -= 100;
   }
 };
 </script>

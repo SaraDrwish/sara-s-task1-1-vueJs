@@ -27,7 +27,7 @@
       </ul> -->
       <!-- Mobile layout: Show only in media -->
 
-      <router-view />
+      <!-- <router-view /> -->
     </div>
 
     <!-- /////////////////////// -->
@@ -48,13 +48,15 @@
     <!-- /////////////////////// -->
 
     <div v-if="isNavOpen" class="nav-btns">
-      <button><a href="signIn">Sign In</a></button>
+      <button><router-link to="/signin"> Sign In </router-link></button>
       <button><a href="freetrial">Free Trial</a></button>
     </div>
 
     <div v-else class="nav-btns nav-btns-d-none-mob">
       <!-- <div class="nav-btns" v-else  > -->
-      <button @click="closeNav"><a href="signIn">Sign In</a></button>
+      <button @click="closeNav">
+        <router-link to="/signin"> Sign In </router-link>
+      </button>
       <button @click="closeNav"><a href="freetrial">Free Trial</a></button>
 
       <!-- svg start  -->
@@ -130,6 +132,7 @@
       </svg>
     </div>
   </div>
+  <!-- <router-view /> -->
 </template>
 
 <!-- //////////////////////////////////////// -->

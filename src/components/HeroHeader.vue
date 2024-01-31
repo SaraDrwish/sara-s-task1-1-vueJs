@@ -569,7 +569,7 @@ import FeaturesSec from "./FeaturesSec.vue";
 import TargServ from "./TargServ.vue";
 import PackageSec from "./PackageSec.vue";
 export default {
-  // name:HeroHeader,
+  // name: HeroHeader,
   components: {
     AfterHeroSec,
     FeaturesSec,

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer overflow-hidden">
+  <div class="footer overflow-hidden relative bottom-0 left-0">
     <div
       class="flex flex-col m-auto text-center w-full justify-center items-center gap-[1rem] pt-[48px] text-white bg-[#3B2E8C]"
     >
