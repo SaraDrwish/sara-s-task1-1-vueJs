@@ -7,17 +7,30 @@
     <div class="nav-list">
       <div v-if="isNavOpen" class="nav-links">
         <ul>
-          <router-link to="/"><li>Home</li></router-link>
-          <a href="FeaturesSec"><li>Features</li></a>
-          <router-link to="/packages"><li>Packages</li></router-link>
+          <router-link to="/" @click="scrollToSection('home')"
+            ><li>Home</li></router-link
+          >
+          <router-link to="/features" @click="scrollToSection('features')"
+            ><li>Features</li></router-link
+          >
+
+          <router-link to="/packages" @click="scrollToTop('packages')"
+            ><li>Packages</li></router-link
+          >
         </ul>
       </div>
 
       <div v-else class="nav-links-d-none-mob">
         <ul>
-          <router-link to="/"><li>Home</li></router-link>
-          <router-link to="/features"><li>Features</li></router-link>
-          <router-link to="/packages"><li>Packages</li></router-link>
+          <router-link to="/" @click="scrollToTop('home')"
+            ><li>Home</li></router-link
+          >
+          <router-link to="/features" @click="scrollToTop('features')"
+            ><li>Features</li></router-link
+          >
+          <router-link to="/packages" @click="scrollToTop('packages')"
+            ><li>Packages</li></router-link
+          >
         </ul>
       </div>
       <!-- <ul v-else  >
@@ -139,8 +152,10 @@
 
 <script setup>
 import { ref } from "vue";
+// import { useRouter } from "vue-router";
 
 const isNavOpen = ref(false);
+// const router = useRouter();
 
 const toggleNav = () => {
   isNavOpen.value = !isNavOpen.value;
@@ -148,6 +163,38 @@ const toggleNav = () => {
 
 const closeNav = () => {
   isNavOpen.value = false;
+};
+
+const scrollToSection = (section) => {
+  const targetElement = document.getElementById(section);
+
+  if (targetElement) {
+    const targetOffset =
+      targetElement.getBoundingClientRect().top + window.scrollY;
+    const initialOffset = window.scrollY;
+    const duration = 500; // You can adjust the duration as needed
+
+    let start = null;
+
+    const animateScroll = (timestamp) => {
+      if (!start) start = timestamp;
+
+      const progress = timestamp - start;
+      const percentage = Math.min(progress / duration, 1);
+      window.scrollTo(
+        0,
+        initialOffset + percentage * (targetOffset - initialOffset)
+      );
+
+      if (progress < duration) {
+        requestAnimationFrame(animateScroll);
+      }
+    };
+
+    requestAnimationFrame(animateScroll);
+  }
+
+  closeNav();
 };
 </script>
 

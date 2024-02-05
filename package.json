@@ -10,10 +10,12 @@
   "dependencies": {
     "autoprefixer": "^10.4.17",
     "core-js": "^3.8.3",
+    "firebase": "^10.8.0",
     "json-server": "^1.0.0-alpha.23",
     "postcss": "^8.4.33",
     "vue": "^3.2.13",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

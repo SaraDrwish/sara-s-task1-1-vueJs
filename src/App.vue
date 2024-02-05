@@ -25,8 +25,6 @@ watchEffect(() => {
 });
 </script>
 
-<!-- ///// -->
-
 <style>
 @import url("https://fonts.cdnfonts.com/css/gotham-9");
 /* @font-face {

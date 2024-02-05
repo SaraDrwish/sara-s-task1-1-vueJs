@@ -37,7 +37,7 @@
                     class="border-r-2 pr-4 h-[150%] flex justify-center items-center overflow-hidden"
                   >
                     <svg
-                      @click="incrementCounter"
+                      @click="changeCounter(5, '5 Users')"
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -61,12 +61,16 @@
                       />
                     </svg>
                   </span>
-                  <span class=" ">One User</span>
+                  <!-- <span class=" ">{{ counter }}Users</span> -->
+                  <span class=" ">
+                    {{ Math.ceil((counter - 25) / 5) * 5 || +1 }} Users</span
+                  >
+
                   <span
                     class="border-l-2 pl-4 h-[150%] overflow-hidden flex justify-center items-center"
                   >
                     <svg
-                      @click="decrementCounter"
+                      @click="changeCounter(-150, 'One User')"
                       class="cursor-pointer w-[24px] h-[24px]"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -358,21 +362,115 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+// ////////////////////////////////////////////////////////
+// import { ref } from "vue";
+
+// const counter = ref(25);
+
+// const incrementCounter = () => {
+//   if (counter.value < 400) {
+//     counter.value += 100;
+//   }
+// };
+
+// const decrementCounter = () => {
+//   if (counter.value > 25) {
+//     counter.value -= 100;
+//   }
+// };
+// const changeCounter = (value, title) => {
+//   const newCounter = counter.value + value;
+//   if (newCounter >= 25 && newCounter <= 400) {
+//     counter.value = newCounter;
+//     document.querySelector(
+//       ".Package h2"
+//     ).innerText = `Choose the appropriate package, and enjoy your Free Trial for ${title}!`;
+//   }
+// };
+
+// /////////////////////////////////////////////////////////////////////////////////////////////
+
+// import { ref, onMounted } from "vue";
+
+// const counter = ref(25);
+
+// const changeCounter = (value, title) => {
+//   const newCounter = counter.value + value;
+//   if (newCounter >= 25 && newCounter <= 400) {
+//     counter.value = newCounter;
+//     document.querySelector(
+//       ".Package h2"
+//     ).innerText = `Choose the appropriate package, and enjoy your Free Trial for ${title}!`;
+//     document.querySelector(
+//       ".Package .flex .text-white span:nth-child(2)"
+//     ).innerText = `${counter.value / 5} Users`;
+//   }
+// };
+
+// onMounted(() => {
+//   document.querySelector(
+//     ".Package .flex .text-white span:nth-child(2)"
+//   ).innerText = `${counter.value / 5} Users`;
+//   document.querySelector(
+//     ".Package h2"
+//   ).innerText = `Choose the appropriate package, and enjoy your Free Trial for 5 Users!`;
+// });
+
+// /////
+
+// import { ref, onMounted } from "vue";
+
+// const counter = ref(25);
+
+// const changeCounter = (value, title) => {
+//   const newCounter = counter.value + value;
+//   if (newCounter >= 25 && newCounter <= 400) {
+//     counter.value = newCounter;
+//     document.querySelector(
+//       ".Package h2"
+//     ).innerText = `Choose the appropriate package, and enjoy your Free Trial for ${title}!`;
+//     document.querySelector(
+//       ".Package .flex .text-white span:nth-child(2)"
+//     ).innerText = `${(counter.value - 25) / 5 + 1} Users`;
+//   }
+// };
+
+// onMounted(() => {
+//   document.querySelector(
+//     ".Package .flex .text-white span:nth-child(2)"
+//   ).innerText = `1 User`;
+//   document.querySelector(
+//     ".Package h2"
+//   ).innerText = `Choose the appropriate package, and enjoy your Free Trial for One User!`;
+// });
+
+// ////
+
+import { ref, onMounted } from "vue";
 
 const counter = ref(25);
 
-const incrementCounter = () => {
-  if (counter.value < 400) {
-    counter.value += 100;
+const changeCounter = (value, title) => {
+  const newCounter = counter.value + value;
+  if (newCounter >= 25 && newCounter <= 400) {
+    counter.value = newCounter;
+    document.querySelector(
+      ".Package h2"
+    ).innerText = `Choose the appropriate package, and enjoy your Free Trial for ${title}!`;
+    document.querySelector(
+      ".Package .flex .text-white span:nth-child(2)"
+    ).innerText = `${Math.ceil((counter.value - 25) / 5) * 5 + 1} Users`;
   }
 };
 
-const decrementCounter = () => {
-  if (counter.value > 25) {
-    counter.value -= 100;
-  }
-};
+onMounted(() => {
+  document.querySelector(
+    ".Package .flex .text-white span:nth-child(2)"
+  ).innerText = `1 User`;
+  document.querySelector(
+    ".Package h2"
+  ).innerText = `Choose the appropriate package, and enjoy your Free Trial for One User!`;
+});
 </script>
 
 <style scoped>

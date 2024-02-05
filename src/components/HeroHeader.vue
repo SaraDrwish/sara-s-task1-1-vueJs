@@ -546,7 +546,7 @@
       <AfterHeroSec />
     </div>
     <!-- /////// -->
-    <div class="FeaturesSec-InHero">
+    <div id="FeaturesSec" class="FeaturesSec-InHero">
       <FeaturesSec />
     </div>
     <!-- ////// -->
